@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-SwiftUIPullToRefresh (iOS)/Pods-SwiftUIPullToRefresh (iOS)-frameworks.sh
-${BUILT_PRODUCTS_DIR}/SwiftUIPullToRefresh-iOS13.0/SwiftUIPullToRefresh.framework
+${BUILT_PRODUCTS_DIR}/Introspect/Introspect.framework
+${BUILT_PRODUCTS_DIR}/SwiftUIPullToRefresh/SwiftUIPullToRefresh.framework

@@ -1,5 +1,5 @@
 framework module SwiftUIPullToRefresh {
-  umbrella header "SwiftUIPullToRefresh-iOS14.0-umbrella.h"
+  umbrella header "SwiftUIPullToRefresh-umbrella.h"
 
   export *
   module * { export * }

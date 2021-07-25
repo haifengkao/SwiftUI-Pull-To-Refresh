@@ -31,17 +31,17 @@ Pod::Spec.new do |s|
 
   # we need ios 11.0 to fix xcodebuild error
   # https://blog.csdn.net/qq_27785797/article/details/109058663
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '14.0'
 
   s.swift_version = '5'
 
   s.source_files = 'SwiftUIPullToRefresh/Classes/**/*'
 
-  # s.resource_bundles = {
-  #   'SwiftUIPullToRefresh' => ['SwiftUIPullToRefresh/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'SwiftUIPullToRefresh' => ['SwiftUIPullToRefresh/Assets/*.*']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Introspect'
 end

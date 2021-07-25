@@ -1,0 +1,16 @@
+"MJRefreshHeaderIdleText" = "Потягніть для оновлення";
+"MJRefreshHeaderPullingText" = "Відпустіть для оновлення";
+"MJRefreshHeaderRefreshingText" = "Завантаження...";
+
+"MJRefreshAutoFooterIdleText" = "Натисніть або потягніть щоб завантажити ще";
+"MJRefreshAutoFooterRefreshingText" = "Завантаження...";
+"MJRefreshAutoFooterNoMoreDataText" = "Більше немає даних";
+
+"MJRefreshBackFooterIdleText" = "Потягніть щоб завантажити ще";
+"MJRefreshBackFooterPullingText" = "Відпустіть щоб завантажити ще";
+"MJRefreshBackFooterRefreshingText" = "Завантаження...";
+"MJRefreshBackFooterNoMoreDataText" = "Більше немає даних";
+
+"MJRefreshHeaderLastTimeText" = "Останнє оновлення: ";
+"MJRefreshHeaderDateTodayText" = "Сьогодні";
+"MJRefreshHeaderNoneLastDateText" = "Немає запису";

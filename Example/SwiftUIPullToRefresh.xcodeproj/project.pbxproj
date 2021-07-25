@@ -3,12 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8D2DA4466C3CDF402CA38C76 /* Pods_SwiftUIPullToRefresh__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02967FFCC3E8C32FF22B81DC /* Pods_SwiftUIPullToRefresh__iOS_.framework */; };
 		F778A0DE7F492FD486767CBB /* Pods_Tests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FAF6AA24F0914675AA6508 /* Pods_Tests_iOS.framework */; };
+		F9386F8326ADEF9B00C4864A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7726ADEF9B00C4864A /* ActivityIndicator.swift */; };
+		F9386F8426ADEF9B00C4864A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7726ADEF9B00C4864A /* ActivityIndicator.swift */; };
+		F9386F8526ADEF9B00C4864A /* SingleListWithoutNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7826ADEF9B00C4864A /* SingleListWithoutNavigationView.swift */; };
+		F9386F8626ADEF9B00C4864A /* SingleListWithoutNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7826ADEF9B00C4864A /* SingleListWithoutNavigationView.swift */; };
+		F9386F8726ADEF9B00C4864A /* SingleListInNavigtionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7926ADEF9B00C4864A /* SingleListInNavigtionView.swift */; };
+		F9386F8826ADEF9B00C4864A /* SingleListInNavigtionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7926ADEF9B00C4864A /* SingleListInNavigtionView.swift */; };
+		F9386F8926ADEF9B00C4864A /* SimpleList2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7C26ADEF9B00C4864A /* SimpleList2.swift */; };
+		F9386F8A26ADEF9B00C4864A /* SimpleList2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7C26ADEF9B00C4864A /* SimpleList2.swift */; };
+		F9386F8B26ADEF9B00C4864A /* SimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7D26ADEF9B00C4864A /* SimpleCell.swift */; };
+		F9386F8C26ADEF9B00C4864A /* SimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7D26ADEF9B00C4864A /* SimpleCell.swift */; };
+		F9386F8D26ADEF9B00C4864A /* SimpleRefreshingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7E26ADEF9B00C4864A /* SimpleRefreshingView.swift */; };
+		F9386F8E26ADEF9B00C4864A /* SimpleRefreshingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7E26ADEF9B00C4864A /* SimpleRefreshingView.swift */; };
+		F9386F8F26ADEF9B00C4864A /* SimplePullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7F26ADEF9B00C4864A /* SimplePullToRefreshView.swift */; };
+		F9386F9026ADEF9B00C4864A /* SimplePullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7F26ADEF9B00C4864A /* SimplePullToRefreshView.swift */; };
+		F9386F9126ADEF9B00C4864A /* SimpleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F8026ADEF9B00C4864A /* SimpleList.swift */; };
+		F9386F9226ADEF9B00C4864A /* SimpleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F8026ADEF9B00C4864A /* SimpleList.swift */; };
 		F95D612D2657D22F00E7D582 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D612C2657D22F00E7D582 /* Tests_iOS.swift */; };
 		F95D61382657D22F00E7D582 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D61372657D22F00E7D582 /* Tests_macOS.swift */; };
 		F95D613A2657D22F00E7D582 /* SwiftUIPullToRefreshApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D61112657D22D00E7D582 /* SwiftUIPullToRefreshApp.swift */; };
@@ -39,13 +55,21 @@
 /* Begin PBXFileReference section */
 		02967FFCC3E8C32FF22B81DC /* Pods_SwiftUIPullToRefresh__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIPullToRefresh__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		054E97059F25815F616C33A0 /* Pods-Tests iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests iOS.debug.xcconfig"; path = "Target Support Files/Pods-Tests iOS/Pods-Tests iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		251025B783FEE6A816DAD14D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		251025B783FEE6A816DAD14D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		988E4425B114A1CF1A34F1A7 /* Pods-SwiftUIPullToRefresh (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIPullToRefresh (iOS).release.xcconfig"; path = "Target Support Files/Pods-SwiftUIPullToRefresh (iOS)/Pods-SwiftUIPullToRefresh (iOS).release.xcconfig"; sourceTree = "<group>"; };
-		AE07F20B57DDD1BB1FD06BFB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		BAC30E0D5F4C04380E4253C3 /* SwiftUIPullToRefresh.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftUIPullToRefresh.podspec; path = ../SwiftUIPullToRefresh.podspec; sourceTree = "<group>"; };
+		AE07F20B57DDD1BB1FD06BFB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BAC30E0D5F4C04380E4253C3 /* SwiftUIPullToRefresh.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftUIPullToRefresh.podspec; path = ../SwiftUIPullToRefresh.podspec; sourceTree = "<group>"; };
 		BAC46A6D8A36B279D44FCF9F /* Pods-SwiftUIPullToRefresh (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIPullToRefresh (iOS).debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIPullToRefresh (iOS)/Pods-SwiftUIPullToRefresh (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 		BAEA6EA365124773F7DB6DD0 /* Pods-Tests iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests iOS.release.xcconfig"; path = "Target Support Files/Pods-Tests iOS/Pods-Tests iOS.release.xcconfig"; sourceTree = "<group>"; };
 		D1FAF6AA24F0914675AA6508 /* Pods_Tests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9386F7726ADEF9B00C4864A /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		F9386F7826ADEF9B00C4864A /* SingleListWithoutNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleListWithoutNavigationView.swift; sourceTree = "<group>"; };
+		F9386F7926ADEF9B00C4864A /* SingleListInNavigtionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleListInNavigtionView.swift; sourceTree = "<group>"; };
+		F9386F7C26ADEF9B00C4864A /* SimpleList2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleList2.swift; sourceTree = "<group>"; };
+		F9386F7D26ADEF9B00C4864A /* SimpleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCell.swift; sourceTree = "<group>"; };
+		F9386F7E26ADEF9B00C4864A /* SimpleRefreshingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleRefreshingView.swift; sourceTree = "<group>"; };
+		F9386F7F26ADEF9B00C4864A /* SimplePullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePullToRefreshView.swift; sourceTree = "<group>"; };
+		F9386F8026ADEF9B00C4864A /* SimpleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleList.swift; sourceTree = "<group>"; };
 		F95D61112657D22D00E7D582 /* SwiftUIPullToRefreshApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPullToRefreshApp.swift; sourceTree = "<group>"; };
 		F95D61122657D22D00E7D582 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F95D61132657D22F00E7D582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,7 +128,6 @@
 				054E97059F25815F616C33A0 /* Pods-Tests iOS.debug.xcconfig */,
 				BAEA6EA365124773F7DB6DD0 /* Pods-Tests iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -115,6 +138,34 @@
 				D1FAF6AA24F0914675AA6508 /* Pods_Tests_iOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9386F7626ADEF9B00C4864A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F9386F7726ADEF9B00C4864A /* ActivityIndicator.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F9386F7A26ADEF9B00C4864A /* List */ = {
+			isa = PBXGroup;
+			children = (
+				F9386F7B26ADEF9B00C4864A /* Simple */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		F9386F7B26ADEF9B00C4864A /* Simple */ = {
+			isa = PBXGroup;
+			children = (
+				F9386F7C26ADEF9B00C4864A /* SimpleList2.swift */,
+				F9386F7D26ADEF9B00C4864A /* SimpleCell.swift */,
+				F9386F7E26ADEF9B00C4864A /* SimpleRefreshingView.swift */,
+				F9386F7F26ADEF9B00C4864A /* SimplePullToRefreshView.swift */,
+				F9386F8026ADEF9B00C4864A /* SimpleList.swift */,
+			);
+			path = Simple;
 			sourceTree = "<group>";
 		};
 		F95D610B2657D22D00E7D582 = {
@@ -135,7 +186,11 @@
 		F95D61102657D22D00E7D582 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F9386F7A26ADEF9B00C4864A /* List */,
+				F9386F7926ADEF9B00C4864A /* SingleListInNavigtionView.swift */,
+				F9386F7826ADEF9B00C4864A /* SingleListWithoutNavigationView.swift */,
 				F95D61112657D22D00E7D582 /* SwiftUIPullToRefreshApp.swift */,
+				F9386F7626ADEF9B00C4864A /* Utilities */,
 				F95D61122657D22D00E7D582 /* ContentView.swift */,
 				F95D61132657D22F00E7D582 /* Assets.xcassets */,
 			);
@@ -440,8 +495,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9386F8326ADEF9B00C4864A /* ActivityIndicator.swift in Sources */,
 				F95D613C2657D22F00E7D582 /* ContentView.swift in Sources */,
 				F95D613A2657D22F00E7D582 /* SwiftUIPullToRefreshApp.swift in Sources */,
+				F9386F8526ADEF9B00C4864A /* SingleListWithoutNavigationView.swift in Sources */,
+				F9386F8926ADEF9B00C4864A /* SimpleList2.swift in Sources */,
+				F9386F8B26ADEF9B00C4864A /* SimpleCell.swift in Sources */,
+				F9386F8D26ADEF9B00C4864A /* SimpleRefreshingView.swift in Sources */,
+				F9386F8F26ADEF9B00C4864A /* SimplePullToRefreshView.swift in Sources */,
+				F9386F9126ADEF9B00C4864A /* SimpleList.swift in Sources */,
+				F9386F8726ADEF9B00C4864A /* SingleListInNavigtionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,8 +512,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9386F8426ADEF9B00C4864A /* ActivityIndicator.swift in Sources */,
 				F95D613D2657D22F00E7D582 /* ContentView.swift in Sources */,
 				F95D613B2657D22F00E7D582 /* SwiftUIPullToRefreshApp.swift in Sources */,
+				F9386F8626ADEF9B00C4864A /* SingleListWithoutNavigationView.swift in Sources */,
+				F9386F8A26ADEF9B00C4864A /* SimpleList2.swift in Sources */,
+				F9386F8C26ADEF9B00C4864A /* SimpleCell.swift in Sources */,
+				F9386F8E26ADEF9B00C4864A /* SimpleRefreshingView.swift in Sources */,
+				F9386F9026ADEF9B00C4864A /* SimplePullToRefreshView.swift in Sources */,
+				F9386F9226ADEF9B00C4864A /* SimpleList.swift in Sources */,
+				F9386F8826ADEF9B00C4864A /* SingleListInNavigtionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +608,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -590,6 +662,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double SwiftUIPullToRefreshVersionNumber;
-FOUNDATION_EXPORT const unsigned char SwiftUIPullToRefreshVersionString[];
+FOUNDATION_EXPORT double IntrospectVersionNumber;
+FOUNDATION_EXPORT const unsigned char IntrospectVersionString[];
 

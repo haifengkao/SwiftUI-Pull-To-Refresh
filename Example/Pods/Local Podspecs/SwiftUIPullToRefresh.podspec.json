@@ -16,9 +16,19 @@
     "tag": "0.4.0"
   },
   "platforms": {
-    "ios": "13.0"
+    "ios": "14.0"
   },
   "swift_versions": "5",
   "source_files": "SwiftUIPullToRefresh/Classes/**/*",
+  "resource_bundles": {
+    "SwiftUIPullToRefresh": [
+      "SwiftUIPullToRefresh/Assets/*.*"
+    ]
+  },
+  "dependencies": {
+    "Introspect": [
+
+    ]
+  },
   "swift_version": "5"
 }
