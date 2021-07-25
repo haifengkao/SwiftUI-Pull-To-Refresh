@@ -1,6 +1,6 @@
 {
   "name": "SwiftUIPullToRefresh",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "summary": "Customizable SwiftUI pull down/up to refresh",
   "description": "support pull down to refresh and pull up to refresh",
   "homepage": "https://github.com/haifengkao/SwiftUI-Pull-To-Refresh",
@@ -12,8 +12,8 @@
     "Hai Feng Kao": "haifeng@cocoaspice.in"
   },
   "source": {
-    "git": "https://github.com/haifengkao/SwiftUIPullToRefresh.git",
-    "tag": "0.3.0"
+    "git": "git@github.com:haifengkao/SwiftUI-Pull-To-Refresh.git",
+    "tag": "0.4.0"
   },
   "platforms": {
     "ios": "13.0"

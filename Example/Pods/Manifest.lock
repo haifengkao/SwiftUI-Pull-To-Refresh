@@ -1,7 +1,7 @@
 PODS:
   - Nimble (9.2.0)
   - Quick (4.0.0)
-  - SwiftUIPullToRefresh (0.3.0)
+  - SwiftUIPullToRefresh (0.4.0)
 
 DEPENDENCIES:
   - Nimble
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Nimble: 4f4a345c80b503b3ea13606a4f98405974ee4d0b
   Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
-  SwiftUIPullToRefresh: 97f0c5700fdf987babfd9ae5e0c71f644ac6d70c
+  SwiftUIPullToRefresh: ca46d7e88ca8bac355d4031bce9744637463eb0d
 
 PODFILE CHECKSUM: 013b29e5477dffea9da60437212bb50cecce1f89
 
