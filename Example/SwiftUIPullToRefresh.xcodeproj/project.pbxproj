@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		684C5FF704D2CF9ED58267F2 /* Pods_Tests_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F717FAC7EC74A79E902AA4 /* Pods_Tests_macOS.framework */; };
 		8D2DA4466C3CDF402CA38C76 /* Pods_SwiftUIPullToRefresh__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02967FFCC3E8C32FF22B81DC /* Pods_SwiftUIPullToRefresh__iOS_.framework */; };
-		F62D74A99FAEDF7AF0037031 /* Pods_SwiftUIPullToRefresh__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58552F41678EE300AE12DAEC /* Pods_SwiftUIPullToRefresh__macOS_.framework */; };
 		F778A0DE7F492FD486767CBB /* Pods_Tests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FAF6AA24F0914675AA6508 /* Pods_Tests_iOS.framework */; };
 		F95D612D2657D22F00E7D582 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D612C2657D22F00E7D582 /* Tests_iOS.swift */; };
 		F95D61382657D22F00E7D582 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D61372657D22F00E7D582 /* Tests_macOS.swift */; };
@@ -41,19 +39,13 @@
 /* Begin PBXFileReference section */
 		02967FFCC3E8C32FF22B81DC /* Pods_SwiftUIPullToRefresh__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIPullToRefresh__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		054E97059F25815F616C33A0 /* Pods-Tests iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests iOS.debug.xcconfig"; path = "Target Support Files/Pods-Tests iOS/Pods-Tests iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		129C55305B31F8C1B65194EE /* Pods-Tests macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests macOS.release.xcconfig"; path = "Target Support Files/Pods-Tests macOS/Pods-Tests macOS.release.xcconfig"; sourceTree = "<group>"; };
 		251025B783FEE6A816DAD14D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		52CE9FD8C22A4B5DD3ABAA28 /* Pods-Tests macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests macOS.debug.xcconfig"; path = "Target Support Files/Pods-Tests macOS/Pods-Tests macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		58552F41678EE300AE12DAEC /* Pods_SwiftUIPullToRefresh__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIPullToRefresh__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FAFA3D9856BBC884802BEFC /* Pods-SwiftUIPullToRefresh (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIPullToRefresh (macOS).release.xcconfig"; path = "Target Support Files/Pods-SwiftUIPullToRefresh (macOS)/Pods-SwiftUIPullToRefresh (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		988E4425B114A1CF1A34F1A7 /* Pods-SwiftUIPullToRefresh (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIPullToRefresh (iOS).release.xcconfig"; path = "Target Support Files/Pods-SwiftUIPullToRefresh (iOS)/Pods-SwiftUIPullToRefresh (iOS).release.xcconfig"; sourceTree = "<group>"; };
 		AE07F20B57DDD1BB1FD06BFB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		B4F717FAC7EC74A79E902AA4 /* Pods_Tests_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC30E0D5F4C04380E4253C3 /* SwiftUIPullToRefresh.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftUIPullToRefresh.podspec; path = ../SwiftUIPullToRefresh.podspec; sourceTree = "<group>"; };
 		BAC46A6D8A36B279D44FCF9F /* Pods-SwiftUIPullToRefresh (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIPullToRefresh (iOS).debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIPullToRefresh (iOS)/Pods-SwiftUIPullToRefresh (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 		BAEA6EA365124773F7DB6DD0 /* Pods-Tests iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests iOS.release.xcconfig"; path = "Target Support Files/Pods-Tests iOS/Pods-Tests iOS.release.xcconfig"; sourceTree = "<group>"; };
 		D1FAF6AA24F0914675AA6508 /* Pods_Tests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EADAAD30E85337650EFB567C /* Pods-SwiftUIPullToRefresh (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIPullToRefresh (macOS).debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIPullToRefresh (macOS)/Pods-SwiftUIPullToRefresh (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 		F95D61112657D22D00E7D582 /* SwiftUIPullToRefreshApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPullToRefreshApp.swift; sourceTree = "<group>"; };
 		F95D61122657D22D00E7D582 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F95D61132657D22F00E7D582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F62D74A99FAEDF7AF0037031 /* Pods_SwiftUIPullToRefresh__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +90,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				684C5FF704D2CF9ED58267F2 /* Pods_Tests_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,12 +101,8 @@
 			children = (
 				BAC46A6D8A36B279D44FCF9F /* Pods-SwiftUIPullToRefresh (iOS).debug.xcconfig */,
 				988E4425B114A1CF1A34F1A7 /* Pods-SwiftUIPullToRefresh (iOS).release.xcconfig */,
-				EADAAD30E85337650EFB567C /* Pods-SwiftUIPullToRefresh (macOS).debug.xcconfig */,
-				7FAFA3D9856BBC884802BEFC /* Pods-SwiftUIPullToRefresh (macOS).release.xcconfig */,
 				054E97059F25815F616C33A0 /* Pods-Tests iOS.debug.xcconfig */,
 				BAEA6EA365124773F7DB6DD0 /* Pods-Tests iOS.release.xcconfig */,
-				52CE9FD8C22A4B5DD3ABAA28 /* Pods-Tests macOS.debug.xcconfig */,
-				129C55305B31F8C1B65194EE /* Pods-Tests macOS.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -126,9 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				02967FFCC3E8C32FF22B81DC /* Pods_SwiftUIPullToRefresh__iOS_.framework */,
-				58552F41678EE300AE12DAEC /* Pods_SwiftUIPullToRefresh__macOS_.framework */,
 				D1FAF6AA24F0914675AA6508 /* Pods_Tests_iOS.framework */,
-				B4F717FAC7EC74A79E902AA4 /* Pods_Tests_macOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,11 +224,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F95D61452657D22F00E7D582 /* Build configuration list for PBXNativeTarget "SwiftUIPullToRefresh (macOS)" */;
 			buildPhases = (
-				80CE64A3F8C20FC5A6003138 /* [CP] Check Pods Manifest.lock */,
 				F95D611C2657D22F00E7D582 /* Sources */,
 				F95D611D2657D22F00E7D582 /* Frameworks */,
 				F95D611E2657D22F00E7D582 /* Resources */,
-				066FCFD6CF12C727D3024B33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,11 +261,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F95D614B2657D22F00E7D582 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
 			buildPhases = (
-				DD8724A7EAFE7A4B905AD91A /* [CP] Check Pods Manifest.lock */,
 				F95D612F2657D22F00E7D582 /* Sources */,
 				F95D61302657D22F00E7D582 /* Frameworks */,
 				F95D61312657D22F00E7D582 /* Resources */,
-				90092D6C89593D581DD57B78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -375,23 +355,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		066FCFD6CF12C727D3024B33 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIPullToRefresh (macOS)/Pods-SwiftUIPullToRefresh (macOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIPullToRefresh (macOS)/Pods-SwiftUIPullToRefresh (macOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIPullToRefresh (macOS)/Pods-SwiftUIPullToRefresh (macOS)-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		424CB7872B3E272A50C1F37E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,67 +405,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SwiftUIPullToRefresh (iOS)-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		80CE64A3F8C20FC5A6003138 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SwiftUIPullToRefresh (macOS)-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		90092D6C89593D581DD57B78 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tests macOS/Pods-Tests macOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tests macOS/Pods-Tests macOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tests macOS/Pods-Tests macOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DD8724A7EAFE7A4B905AD91A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Tests macOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -742,7 +644,6 @@
 		};
 		F95D61462657D22F00E7D582 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EADAAD30E85337650EFB567C /* Pods-SwiftUIPullToRefresh (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -765,7 +666,6 @@
 		};
 		F95D61472657D22F00E7D582 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7FAFA3D9856BBC884802BEFC /* Pods-SwiftUIPullToRefresh (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -831,7 +731,6 @@
 		};
 		F95D614C2657D22F00E7D582 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52CE9FD8C22A4B5DD3ABAA28 /* Pods-Tests macOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -852,7 +751,6 @@
 		};
 		F95D614D2657D22F00E7D582 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 129C55305B31F8C1B65194EE /* Pods-Tests macOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;

@@ -1,6 +1,0 @@
-framework module Pods_SwiftUIPullToRefresh__macOS_ {
-  umbrella header "Pods-SwiftUIPullToRefresh (macOS)-umbrella.h"
-
-  export *
-  module * { export * }
-}
