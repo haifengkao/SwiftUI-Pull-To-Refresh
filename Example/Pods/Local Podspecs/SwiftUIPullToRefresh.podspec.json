@@ -1,9 +1,9 @@
 {
   "name": "SwiftUIPullToRefresh",
-  "version": "0.1.0",
-  "summary": "A short description of SwiftUIPullToRefresh.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/haifengkao/SwiftUIPullToRefresh",
+  "version": "0.2.0",
+  "summary": "Customizable SwiftUI pull down/up to refresh",
+  "description": "support pull down to refresh and pull up to refresh",
+  "homepage": "https://github.com/haifengkao/SwiftUI-Pull-To-Refresh",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -13,11 +13,10 @@
   },
   "source": {
     "git": "https://github.com/haifengkao/SwiftUIPullToRefresh.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
-    "ios": "14.0",
-    "osx": "11.0"
+    "ios": "13.0"
   },
   "swift_versions": "5",
   "source_files": "SwiftUIPullToRefresh/Classes/**/*",

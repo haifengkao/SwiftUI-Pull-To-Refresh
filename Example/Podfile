@@ -11,7 +11,7 @@ def allPods
 end
 
 target 'SwiftUIPullToRefresh (iOS)' do
-  platform :ios, '14.0'
+  platform :ios, '13.0'
   allPods
 end
 
@@ -22,17 +22,17 @@ target 'Tests iOS' do
     pod 'Nimble'
 end
 
-target 'SwiftUIPullToRefresh (macOS)' do
-  platform :osx, '11.0'
-  allPods
-end
-
-target 'Tests macOS' do
-  platform :osx, '11.0'
-  allPods
-  pod 'Quick'
-    pod 'Nimble'
-end
+# target 'SwiftUIPullToRefresh (macOS)' do
+#   platform :osx, '11.0'
+#   allPods
+# end
+#
+# target 'Tests macOS' do
+#   platform :osx, '11.0'
+#   allPods
+#   pod 'Quick'
+#     pod 'Nimble'
+# end
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|
