@@ -1,0 +1,27 @@
+PODS:
+  - Nimble (9.2.0)
+  - Quick (4.0.0)
+  - SwiftUIPullToRefresh (0.1.0)
+
+DEPENDENCIES:
+  - Nimble
+  - Quick
+  - SwiftUIPullToRefresh (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  SwiftUIPullToRefresh:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 4f4a345c80b503b3ea13606a4f98405974ee4d0b
+  Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
+  SwiftUIPullToRefresh: cfd3d1a08e6e90485febc4578a8f3c12e6375671
+
+PODFILE CHECKSUM: 6bc73dfc5abcc18666e0618616256af8d48faab2
+
+COCOAPODS: 1.10.1
