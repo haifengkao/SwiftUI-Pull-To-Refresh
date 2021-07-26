@@ -8,12 +8,12 @@
 import SwiftUI
 
 public struct MJRefreshNormalHeader: View {
-    @Binding var refreshing: Bool
+    let refreshing: Bool
     @Binding var lastUpdatedTime: Date?
 
     let progress: Double
-    public init(refreshing: Binding<Bool>, lastUpdatedTime: Binding<Date?>, progress: Double) {
-        _refreshing = refreshing
+    public init(refreshing: Bool, lastUpdatedTime: Binding<Date?>, progress: Double) {
+        self.refreshing = refreshing
         self.progress = progress
         _lastUpdatedTime = lastUpdatedTime
     }

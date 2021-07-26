@@ -17,7 +17,7 @@ struct SimpleList2: View {
     }
 
     @State private var items: [SimpleList.Item] = []
-    @State private var headerRefreshing: Bool = false
+    
     @State private var headerLastUpdatedTime: Date? = nil
     @State private var footerRefreshing: Bool = false
     @State private var noMore: Bool = false
@@ -26,11 +26,10 @@ struct SimpleList2: View {
         ScrollView {
             
             if items.count > 0 {
-                RefreshHeader(action: { endRefresh in
-                    self.reload(endRefresh: endRefresh)
-                }) { progress in
+                RefreshHeader { update in
 
-                    MJRefreshNormalHeader(refreshing: self.$headerRefreshing, lastUpdatedTime: $headerLastUpdatedTime, progress: Double(progress)).opacity(Double(progress))
+                    MJRefreshNormalHeader(refreshing: update.refreshing, lastUpdatedTime: $headerLastUpdatedTime, progress: Double(update.progress))
+                        .opacity(Double(min(update.progress, 1.0)))
                     // SimplePullToRefreshView(progress: progress)
                 }
             }
@@ -39,7 +38,10 @@ struct SimpleList2: View {
                 SimpleCell(item: item)
             }
         }
-        .headerRefreshable()
+        .headerRefreshable { endRefresh in
+            self.reload(endRefresh: endRefresh)
+            
+        }
         .overlay(Group {
             if items.count == 0 {
                 ActivityIndicator(style: .medium)

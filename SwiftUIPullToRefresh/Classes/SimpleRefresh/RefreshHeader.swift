@@ -13,12 +13,11 @@ public typealias Action = (@escaping EndRefresh) -> Void
 
 @available(iOS 13.0, *)
 public struct RefreshHeader<Label>: View where Label: View {
-    // let progress: CGFloat = 1.0
-    let action: Action
-    let label: (CGFloat) -> Label
+    @Environment(\.headerUpdate) var update
+    
+    let label: (RefreshViewState) -> Label
 
-    public init(action: @escaping Action, @ViewBuilder label: @escaping (CGFloat) -> Label) {
-        self.action = action
+    public init(@ViewBuilder label: @escaping (RefreshViewState) -> Label) {
         self.label = label
     }
 
@@ -26,14 +25,14 @@ public struct RefreshHeader<Label>: View where Label: View {
         return Group {
             VStack(alignment: .center, spacing: 0) {
                 Spacer()
-                label(1.0)
+                label(update)
                 // .opacity(opacity) // TODO: add to MJHeader instead
             }
             .frame(maxWidth: .infinity)
         }
         .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
         .anchorPreference(key: RefreshHeaderAnchorKey.self, value: .bounds) {
-            [.init(bounds: $0, action: self.action)]
+            [.init(bounds: $0)]
         }
     }
 

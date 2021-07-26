@@ -40,6 +40,6 @@ struct RefreshState: CustomStringConvertible {
 
 extension RefreshState {
     var asViewState: RefreshViewState {
-        .init(headerPadding: headerPadding, shouldAnimating: status == .endingRefresh)
+        .init(headerPadding: headerPadding, shouldAnimating: status == .endingRefresh, refreshing: status == .refresh, progress:headerProgress)
     }
 }

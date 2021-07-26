@@ -12,12 +12,12 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 struct RefreshModifier {
-    let isEnabled: Bool
+    let headerAction: Action
 
     @StateObject var viewModel: RefreshViewModel = .init()
 
-    init(enable: Bool) {
-        isEnabled = enable
+    init(headerAction: @escaping Action) {
+        self.headerAction = headerAction
     }
 
     @Environment(\.defaultMinListRowHeight) var rowHeight
@@ -25,6 +25,7 @@ struct RefreshModifier {
 
 @available(iOS 13.0, *)
 extension RefreshModifier: ViewModifier {
+    
     var state: RefreshViewState {
         viewModel.viewState
     }
@@ -37,7 +38,7 @@ extension RefreshModifier: ViewModifier {
         return GeometryReader { proxy in
 
             content
-
+                .environment(\.headerUpdate, state)
                 .padding(.top, state.headerPadding)
                 // .clipped(true) // https://github.com/siteline/SwiftUI-Introspect/issues/115
                 .onAnimationCompleted(for: state.headerPadding) {
@@ -53,6 +54,7 @@ extension RefreshModifier: ViewModifier {
 
         }.introspectScrollView { scrollView in
             self.viewModel.scrollView = scrollView
+            dispatch(.updateRefreshHeaderAction(headerAction))
         }
     }
 
@@ -63,14 +65,14 @@ extension RefreshModifier: ViewModifier {
 
         var bound: CGRect = proxy[value.bounds]
         // bound.origin = .zero // avoid infinite loop
-        dispatch(.updateRefreshHeader(value.action, bound))
+        dispatch(.updateRefreshHeader(bound))
     }
 }
 
 @available(iOS 13.0, *)
 public extension ScrollView {
-    func headerRefreshable(_ enable: Bool = true) -> some View {
-        modifier(RefreshModifier(enable: enable))
+    func headerRefreshable(_ headerAction: @escaping Action) -> some View {
+        modifier(RefreshModifier(headerAction: headerAction))
     }
 }
 

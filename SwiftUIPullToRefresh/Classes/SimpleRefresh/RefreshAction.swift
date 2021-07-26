@@ -12,7 +12,8 @@ import Foundation
 enum RefreshAction {
     case updateScrollViewState(ScrollViewState)
     case updateMinListRowHeight(CGFloat)
-    case updateRefreshHeader(Action, CGRect)
+    case updateRefreshHeader(CGRect)
+    case updateRefreshHeaderAction(Action)
     case endRefresh
     case endAnimating
 }

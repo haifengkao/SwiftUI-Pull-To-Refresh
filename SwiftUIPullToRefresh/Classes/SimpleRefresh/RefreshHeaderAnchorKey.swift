@@ -16,7 +16,6 @@ enum RefreshHeaderAnchorKey: PreferenceKey {
 
     struct Item {
         let bounds: Anchor<CGRect>
-        let action: Action
     }
 
     static func reduce(value: inout Value, nextValue: () -> Value) {

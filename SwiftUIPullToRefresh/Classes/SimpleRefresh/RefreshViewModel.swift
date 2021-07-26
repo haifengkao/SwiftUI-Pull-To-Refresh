@@ -19,8 +19,9 @@ class RefreshViewModel: ObservableObject {
         switch action {
         case let .updateMinListRowHeight(height):
             newState.minListRowHeight = height
-        case let .updateRefreshHeader(action, bounds):
+        case let .updateRefreshHeaderAction(action):
             reduce(action, state: &newState)
+        case let .updateRefreshHeader(bounds):
             reduce(headerBounds: bounds, state: &newState)
         case let .updateScrollViewState(scrollViewState):
             reduce(scrollViewState, state: &newState)

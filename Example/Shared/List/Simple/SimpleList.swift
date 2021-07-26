@@ -28,7 +28,7 @@ struct SimpleList: View {
                     self.reload()
                 }) { progress in
 
-                    MJRefreshNormalHeader(refreshing: self.$headerRefreshing, lastUpdatedTime: $headerLastUpdatedTime, progress: Double(progress))
+                    MJRefreshNormalHeader(refreshing: self.headerRefreshing, lastUpdatedTime: $headerLastUpdatedTime, progress: Double(progress))
                     // SimplePullToRefreshView(progress: progress)
                 }
             }
