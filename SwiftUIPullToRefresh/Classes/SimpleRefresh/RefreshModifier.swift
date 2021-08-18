@@ -63,7 +63,7 @@ extension RefreshModifier: ViewModifier {
             return
         }
 
-        var bound: CGRect = proxy[value.bounds]
+        let bound: CGRect = proxy[value.bounds]
         // bound.origin = .zero // avoid infinite loop
         dispatch(.updateRefreshHeader(bound))
     }
