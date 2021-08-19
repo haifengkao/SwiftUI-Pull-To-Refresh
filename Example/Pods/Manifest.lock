@@ -2,7 +2,7 @@ PODS:
   - Introspect (0.1.3)
   - Nimble (9.2.0)
   - Quick (4.0.0)
-  - SwiftUIPullToRefresh (0.5.0):
+  - SwiftUIPullToRefresh (0.6.0):
     - Introspect
 
 DEPENDENCIES:
@@ -14,11 +14,13 @@ EXTERNAL SOURCES:
   SwiftUIPullToRefresh:
     :path: "../"
 
+CHECKOUT OPTIONS: 
+
 SPEC CHECKSUMS:
   Introspect: 2be020f30f084ada52bb4387fff83fa52c5c400e
   Nimble: 4f4a345c80b503b3ea13606a4f98405974ee4d0b
   Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
-  SwiftUIPullToRefresh: 116b4aafb3ac6623ed3210921f34625f8959b77f
+  SwiftUIPullToRefresh: bcc433330ba7b0754db7d74281d2222399fd91e0
 
 COCOAPODS: 1.10.2
 
