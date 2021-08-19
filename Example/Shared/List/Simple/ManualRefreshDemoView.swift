@@ -6,33 +6,28 @@
 //  Copyright (c) 2021 Hai Feng Kao. All rights reserved.
 //
 
-import SwiftUIPullToRefresh
 import SwiftUI
+import SwiftUIPullToRefresh
 
-struct SimpleList2: View {
-    struct Item: Identifiable {
-        let id = UUID()
-        let color: Color
-        let contentHeight: CGFloat
-    }
+struct ManualRefreshDemoView: View {
+    typealias Item = WXXSWRefreshDemoView.Item
 
-    @State private var items: [SimpleList.Item] = []
-    
+    @State private var items: [Item] = []
+
     @State private var headerLastUpdatedTime: Date? = nil
     @State private var footerRefreshing: Bool = false
     @State private var noMore: Bool = false
 
     var body: some View {
         ScrollView {
-            
-            if items.count > 0 {
-                RefreshHeader { update in
+            // if items.count > 0 {
+            RefreshHeader { update in
 
-                    MJRefreshNormalHeader(refreshing: update.refreshing, lastUpdatedTime: $headerLastUpdatedTime, progress: Double(update.progress))
-                        .opacity(Double(min(update.progress, 1.0)))
-                    // SimplePullToRefreshView(progress: progress)
-                }
+                MJRefreshNormalHeader(refreshing: update.refreshing, lastUpdatedTime: $headerLastUpdatedTime, progress: Double(update.progress))
+                    .opacity(Double(min(update.progress, 1.0)))
+                // SimplePullToRefreshView(progress: progress)
             }
+            // }
 
             ForEach(items) { item in
                 SimpleCell(item: item)
@@ -40,7 +35,6 @@ struct SimpleList2: View {
         }
         .headerRefreshable { endRefresh in
             self.reload(endRefresh: endRefresh)
-            
         }
         .overlay(Group {
             if items.count == 0 {
@@ -50,11 +44,15 @@ struct SimpleList2: View {
             }
         })
         .onAppear { self.reload() }
+
+        .navigationBarBackground {
+            Color.pink.shadow(radius: 1) // don't forget the shadow under the opaque navigation bar
+        }
     }
 
-    func reload(endRefresh: @escaping EndRefresh = { }) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.items = SimpleList.generateItems(count: 20)
+    func reload(endRefresh: @escaping EndRefresh = {}) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.items = WXXSWRefreshDemoView.generateItems(count: 20)
             self.noMore = false
             endRefresh()
         }
@@ -62,7 +60,7 @@ struct SimpleList2: View {
 
     func loadMore() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.items += SimpleList.generateItems(count: 10)
+            self.items += WXXSWRefreshDemoView.generateItems(count: 10)
             self.footerRefreshing = false
             self.noMore = self.items.count > 50
         }

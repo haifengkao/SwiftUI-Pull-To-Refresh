@@ -10,12 +10,6 @@ DEPENDENCIES:
   - Quick
   - SwiftUIPullToRefresh (from `../`)
 
-SPEC REPOS:
-  trunk:
-    - Introspect
-    - Nimble
-    - Quick
-
 EXTERNAL SOURCES:
   SwiftUIPullToRefresh:
     :path: "../"
@@ -26,6 +20,12 @@ SPEC CHECKSUMS:
   Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
   SwiftUIPullToRefresh: 116b4aafb3ac6623ed3210921f34625f8959b77f
 
-PODFILE CHECKSUM: cfe39a3d95981a33ba62054ca89be85fbc0033b5
+COCOAPODS: 1.10.2
 
-COCOAPODS: 1.10.1
+PODFILE CHECKSUM: ec6646c9920e78e32d529996748dd457db6db1e4
+
+SPEC REPOS:
+  trunk:
+    - Introspect
+    - Nimble
+    - Quick

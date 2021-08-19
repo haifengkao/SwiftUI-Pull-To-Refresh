@@ -11,12 +11,12 @@ def allPods
 end
 
 target 'SwiftUIPullToRefresh (iOS)' do
-  platform :ios, '14.0'
+  platform :ios, '15.0'
   allPods
 end
 
 target 'Tests iOS' do
-  platform :ios, '14.0'
+  platform :ios, '15.0'
   allPods
   pod 'Quick'
     pod 'Nimble'

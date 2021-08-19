@@ -24,7 +24,7 @@ class RefreshViewModel: ObservableObject {
         case let .updateRefreshHeader(bounds):
             reduce(headerBounds: bounds, state: &newState)
         case let .updateScrollViewState(scrollViewState):
-            reduce(scrollViewState, state: &newState)
+            reduce(scrollViewState: scrollViewState, state: &newState)
         case .endRefresh:
             assert(internalState.status == .refresh)
             newState.status = .endingRefresh
@@ -34,6 +34,12 @@ class RefreshViewModel: ObservableObject {
 
             if newState.status == .endingRefresh {
                 newState.status = .idle
+            }
+        case let .callRefreshOnInit(refreshAction):
+            if !newState.refreshOnInitExecuted {
+                // only apply on the first init
+                newState.refreshOnInitExecuted = true
+                newState.beginRefresh(onReload: refreshAction)
             }
         }
 

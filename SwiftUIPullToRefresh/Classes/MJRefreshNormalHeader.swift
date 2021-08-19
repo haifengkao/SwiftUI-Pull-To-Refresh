@@ -67,7 +67,7 @@ public struct MJRefreshNormalHeader: View {
                 } else {
                     Image("arrow", bundle: BundleToken.bundle)
                         .rotationEffect(.degrees(progress > 1.0 ? 180 : 0))
-                        .animation(.linear)
+                        .animation(.linear, value: progress)
                 }
 
                 VStack {

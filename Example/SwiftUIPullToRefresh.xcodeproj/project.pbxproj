@@ -3,28 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8D2DA4466C3CDF402CA38C76 /* Pods_SwiftUIPullToRefresh__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02967FFCC3E8C32FF22B81DC /* Pods_SwiftUIPullToRefresh__iOS_.framework */; };
 		F778A0DE7F492FD486767CBB /* Pods_Tests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FAF6AA24F0914675AA6508 /* Pods_Tests_iOS.framework */; };
+		F91B346726CD2F91006D7D39 /* SwiftUINavigationBarColor in Frameworks */ = {isa = PBXBuildFile; productRef = F91B346626CD2F91006D7D39 /* SwiftUINavigationBarColor */; };
+		F91B346926CD3FEC006D7D39 /* ios15RefreshDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B346826CD3FEC006D7D39 /* ios15RefreshDemoView.swift */; };
+		F91B346A26CD3FEC006D7D39 /* ios15RefreshDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91B346826CD3FEC006D7D39 /* ios15RefreshDemoView.swift */; };
 		F9386F8326ADEF9B00C4864A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7726ADEF9B00C4864A /* ActivityIndicator.swift */; };
 		F9386F8426ADEF9B00C4864A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7726ADEF9B00C4864A /* ActivityIndicator.swift */; };
-		F9386F8526ADEF9B00C4864A /* SingleListWithoutNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7826ADEF9B00C4864A /* SingleListWithoutNavigationView.swift */; };
-		F9386F8626ADEF9B00C4864A /* SingleListWithoutNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7826ADEF9B00C4864A /* SingleListWithoutNavigationView.swift */; };
 		F9386F8726ADEF9B00C4864A /* SingleListInNavigtionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7926ADEF9B00C4864A /* SingleListInNavigtionView.swift */; };
 		F9386F8826ADEF9B00C4864A /* SingleListInNavigtionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7926ADEF9B00C4864A /* SingleListInNavigtionView.swift */; };
-		F9386F8926ADEF9B00C4864A /* SimpleList2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7C26ADEF9B00C4864A /* SimpleList2.swift */; };
-		F9386F8A26ADEF9B00C4864A /* SimpleList2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7C26ADEF9B00C4864A /* SimpleList2.swift */; };
+		F9386F8926ADEF9B00C4864A /* ManualRefreshDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7C26ADEF9B00C4864A /* ManualRefreshDemoView.swift */; };
+		F9386F8A26ADEF9B00C4864A /* ManualRefreshDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7C26ADEF9B00C4864A /* ManualRefreshDemoView.swift */; };
 		F9386F8B26ADEF9B00C4864A /* SimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7D26ADEF9B00C4864A /* SimpleCell.swift */; };
 		F9386F8C26ADEF9B00C4864A /* SimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7D26ADEF9B00C4864A /* SimpleCell.swift */; };
-		F9386F8D26ADEF9B00C4864A /* SimpleRefreshingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7E26ADEF9B00C4864A /* SimpleRefreshingView.swift */; };
-		F9386F8E26ADEF9B00C4864A /* SimpleRefreshingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7E26ADEF9B00C4864A /* SimpleRefreshingView.swift */; };
-		F9386F8F26ADEF9B00C4864A /* SimplePullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7F26ADEF9B00C4864A /* SimplePullToRefreshView.swift */; };
-		F9386F9026ADEF9B00C4864A /* SimplePullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F7F26ADEF9B00C4864A /* SimplePullToRefreshView.swift */; };
-		F9386F9126ADEF9B00C4864A /* SimpleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F8026ADEF9B00C4864A /* SimpleList.swift */; };
-		F9386F9226ADEF9B00C4864A /* SimpleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F8026ADEF9B00C4864A /* SimpleList.swift */; };
+		F9386F9126ADEF9B00C4864A /* WXXSWRefreshDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F8026ADEF9B00C4864A /* WXXSWRefreshDemoView.swift */; };
+		F9386F9226ADEF9B00C4864A /* WXXSWRefreshDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9386F8026ADEF9B00C4864A /* WXXSWRefreshDemoView.swift */; };
 		F95D612D2657D22F00E7D582 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D612C2657D22F00E7D582 /* Tests_iOS.swift */; };
 		F95D61382657D22F00E7D582 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D61372657D22F00E7D582 /* Tests_macOS.swift */; };
 		F95D613A2657D22F00E7D582 /* SwiftUIPullToRefreshApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D61112657D22D00E7D582 /* SwiftUIPullToRefreshApp.swift */; };
@@ -33,6 +30,8 @@
 		F95D613D2657D22F00E7D582 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D61122657D22D00E7D582 /* ContentView.swift */; };
 		F95D613E2657D22F00E7D582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95D61132657D22F00E7D582 /* Assets.xcassets */; };
 		F95D613F2657D22F00E7D582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95D61132657D22F00E7D582 /* Assets.xcassets */; };
+		F9A6625126CD4791006D0F32 /* AutoRefreshDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A6625026CD4791006D0F32 /* AutoRefreshDemoView.swift */; };
+		F9A6625226CD4791006D0F32 /* AutoRefreshDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A6625026CD4791006D0F32 /* AutoRefreshDemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,14 +61,12 @@
 		BAC46A6D8A36B279D44FCF9F /* Pods-SwiftUIPullToRefresh (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIPullToRefresh (iOS).debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIPullToRefresh (iOS)/Pods-SwiftUIPullToRefresh (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 		BAEA6EA365124773F7DB6DD0 /* Pods-Tests iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests iOS.release.xcconfig"; path = "Target Support Files/Pods-Tests iOS/Pods-Tests iOS.release.xcconfig"; sourceTree = "<group>"; };
 		D1FAF6AA24F0914675AA6508 /* Pods_Tests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91B346826CD3FEC006D7D39 /* ios15RefreshDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios15RefreshDemoView.swift; sourceTree = "<group>"; };
 		F9386F7726ADEF9B00C4864A /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
-		F9386F7826ADEF9B00C4864A /* SingleListWithoutNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleListWithoutNavigationView.swift; sourceTree = "<group>"; };
 		F9386F7926ADEF9B00C4864A /* SingleListInNavigtionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleListInNavigtionView.swift; sourceTree = "<group>"; };
-		F9386F7C26ADEF9B00C4864A /* SimpleList2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleList2.swift; sourceTree = "<group>"; };
+		F9386F7C26ADEF9B00C4864A /* ManualRefreshDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualRefreshDemoView.swift; sourceTree = "<group>"; };
 		F9386F7D26ADEF9B00C4864A /* SimpleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCell.swift; sourceTree = "<group>"; };
-		F9386F7E26ADEF9B00C4864A /* SimpleRefreshingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleRefreshingView.swift; sourceTree = "<group>"; };
-		F9386F7F26ADEF9B00C4864A /* SimplePullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePullToRefreshView.swift; sourceTree = "<group>"; };
-		F9386F8026ADEF9B00C4864A /* SimpleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleList.swift; sourceTree = "<group>"; };
+		F9386F8026ADEF9B00C4864A /* WXXSWRefreshDemoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXXSWRefreshDemoView.swift; sourceTree = "<group>"; };
 		F95D61112657D22D00E7D582 /* SwiftUIPullToRefreshApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPullToRefreshApp.swift; sourceTree = "<group>"; };
 		F95D61122657D22D00E7D582 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F95D61132657D22F00E7D582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,6 +81,7 @@
 		F95D61332657D22F00E7D582 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95D61372657D22F00E7D582 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		F95D61392657D22F00E7D582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A6625026CD4791006D0F32 /* AutoRefreshDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoRefreshDemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F91B346726CD2F91006D7D39 /* SwiftUINavigationBarColor in Frameworks */,
 				8D2DA4466C3CDF402CA38C76 /* Pods_SwiftUIPullToRefresh__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,11 +158,11 @@
 		F9386F7B26ADEF9B00C4864A /* Simple */ = {
 			isa = PBXGroup;
 			children = (
-				F9386F7C26ADEF9B00C4864A /* SimpleList2.swift */,
+				F9386F7C26ADEF9B00C4864A /* ManualRefreshDemoView.swift */,
 				F9386F7D26ADEF9B00C4864A /* SimpleCell.swift */,
-				F9386F7E26ADEF9B00C4864A /* SimpleRefreshingView.swift */,
-				F9386F7F26ADEF9B00C4864A /* SimplePullToRefreshView.swift */,
-				F9386F8026ADEF9B00C4864A /* SimpleList.swift */,
+				F9386F8026ADEF9B00C4864A /* WXXSWRefreshDemoView.swift */,
+				F91B346826CD3FEC006D7D39 /* ios15RefreshDemoView.swift */,
+				F9A6625026CD4791006D0F32 /* AutoRefreshDemoView.swift */,
 			);
 			path = Simple;
 			sourceTree = "<group>";
@@ -188,7 +187,6 @@
 			children = (
 				F9386F7A26ADEF9B00C4864A /* List */,
 				F9386F7926ADEF9B00C4864A /* SingleListInNavigtionView.swift */,
-				F9386F7826ADEF9B00C4864A /* SingleListWithoutNavigationView.swift */,
 				F95D61112657D22D00E7D582 /* SwiftUIPullToRefreshApp.swift */,
 				F9386F7626ADEF9B00C4864A /* Utilities */,
 				F95D61122657D22D00E7D582 /* ContentView.swift */,
@@ -271,6 +269,9 @@
 			dependencies = (
 			);
 			name = "SwiftUIPullToRefresh (iOS)";
+			packageProductDependencies = (
+				F91B346626CD2F91006D7D39 /* SwiftUINavigationBarColor */,
+			);
 			productName = "SwiftUIPullToRefresh (iOS)";
 			productReference = F95D61182657D22F00E7D582 /* SwiftUIPullToRefreshExample.app */;
 			productType = "com.apple.product-type.application";
@@ -337,7 +338,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
-				LastUpgradeCheck = 1230;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					F95D61172657D22F00E7D582 = {
 						CreatedOnToolsVersion = 12.3;
@@ -364,6 +365,9 @@
 				Base,
 			);
 			mainGroup = F95D610B2657D22D00E7D582;
+			packageReferences = (
+				F91B346526CD2F91006D7D39 /* XCRemoteSwiftPackageReference "SwiftUI-Navigation-Bar-Color" */,
+			);
 			productRefGroup = F95D61192657D22F00E7D582 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -498,12 +502,11 @@
 				F9386F8326ADEF9B00C4864A /* ActivityIndicator.swift in Sources */,
 				F95D613C2657D22F00E7D582 /* ContentView.swift in Sources */,
 				F95D613A2657D22F00E7D582 /* SwiftUIPullToRefreshApp.swift in Sources */,
-				F9386F8526ADEF9B00C4864A /* SingleListWithoutNavigationView.swift in Sources */,
-				F9386F8926ADEF9B00C4864A /* SimpleList2.swift in Sources */,
+				F9386F8926ADEF9B00C4864A /* ManualRefreshDemoView.swift in Sources */,
 				F9386F8B26ADEF9B00C4864A /* SimpleCell.swift in Sources */,
-				F9386F8D26ADEF9B00C4864A /* SimpleRefreshingView.swift in Sources */,
-				F9386F8F26ADEF9B00C4864A /* SimplePullToRefreshView.swift in Sources */,
-				F9386F9126ADEF9B00C4864A /* SimpleList.swift in Sources */,
+				F9A6625126CD4791006D0F32 /* AutoRefreshDemoView.swift in Sources */,
+				F91B346926CD3FEC006D7D39 /* ios15RefreshDemoView.swift in Sources */,
+				F9386F9126ADEF9B00C4864A /* WXXSWRefreshDemoView.swift in Sources */,
 				F9386F8726ADEF9B00C4864A /* SingleListInNavigtionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,12 +518,11 @@
 				F9386F8426ADEF9B00C4864A /* ActivityIndicator.swift in Sources */,
 				F95D613D2657D22F00E7D582 /* ContentView.swift in Sources */,
 				F95D613B2657D22F00E7D582 /* SwiftUIPullToRefreshApp.swift in Sources */,
-				F9386F8626ADEF9B00C4864A /* SingleListWithoutNavigationView.swift in Sources */,
-				F9386F8A26ADEF9B00C4864A /* SimpleList2.swift in Sources */,
+				F9386F8A26ADEF9B00C4864A /* ManualRefreshDemoView.swift in Sources */,
 				F9386F8C26ADEF9B00C4864A /* SimpleCell.swift in Sources */,
-				F9386F8E26ADEF9B00C4864A /* SimpleRefreshingView.swift in Sources */,
-				F9386F9026ADEF9B00C4864A /* SimplePullToRefreshView.swift in Sources */,
-				F9386F9226ADEF9B00C4864A /* SimpleList.swift in Sources */,
+				F9A6625226CD4791006D0F32 /* AutoRefreshDemoView.swift in Sources */,
+				F91B346A26CD3FEC006D7D39 /* ios15RefreshDemoView.swift in Sources */,
+				F9386F9226ADEF9B00C4864A /* WXXSWRefreshDemoView.swift in Sources */,
 				F9386F8826ADEF9B00C4864A /* SingleListInNavigtionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -608,7 +610,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -662,7 +664,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -679,7 +681,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -701,7 +703,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -721,6 +723,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
@@ -743,6 +746,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
@@ -891,6 +895,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F91B346526CD2F91006D7D39 /* XCRemoteSwiftPackageReference "SwiftUI-Navigation-Bar-Color" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/haifengkao/SwiftUI-Navigation-Bar-Color";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F91B346626CD2F91006D7D39 /* SwiftUINavigationBarColor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F91B346526CD2F91006D7D39 /* XCRemoteSwiftPackageReference "SwiftUI-Navigation-Bar-Color" */;
+			productName = SwiftUINavigationBarColor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F95D610C2657D22D00E7D582 /* Project object */;
 }

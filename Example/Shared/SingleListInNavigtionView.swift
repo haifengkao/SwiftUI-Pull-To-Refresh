@@ -6,12 +6,36 @@
 //
 
 import SwiftUI
+import SwiftUINavigationBarColor
 
 struct SingleListInNavigtionView: View {
     var body: some View {
-        SimpleList2()
-            .edgesIgnoringSafeArea(.bottom)
+        NavigationView {
+            VStack {
+                NavigationLink(destination: WXXSWRefreshDemoView(), label: {
+                    Text("WXXSW/Refresh")
+                })
+                Divider()
+                NavigationLink(destination: ManualRefreshDemoView(), label: {
+                    Text("SwiftUIPullToRefresh manual")
+                })
+                Divider()
+                NavigationLink(destination: AutoRefreshDemoView(), label: {
+                    Text("SwiftUIPullToRefresh refresh on start")
+                })
+                Divider()
+                NavigationLink(destination: ios15RefreshDemoView(), label: {
+                    Text("iOS 15 native pull to refresh")
+                })
+            }
+            .navigationBarBackground {
+                Color.pink.shadow(radius: 1) // don't forget the shadow under the opaque navigation bar
+            }
+            .navigationTransparentBar(tintColor: .white)
+            .navigationViewStyle(StackNavigationViewStyle())
+
             .navigationBarTitle("Single List in NavigationView", displayMode: .inline)
+        }
     }
 }
 

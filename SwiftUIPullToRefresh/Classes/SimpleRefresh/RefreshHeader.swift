@@ -14,7 +14,7 @@ public typealias Action = (@escaping EndRefresh) -> Void
 @available(iOS 13.0, *)
 public struct RefreshHeader<Label>: View where Label: View {
     @Environment(\.headerUpdate) var update
-    
+
     let label: (RefreshViewState) -> Label
 
     public init(@ViewBuilder label: @escaping (RefreshViewState) -> Label) {

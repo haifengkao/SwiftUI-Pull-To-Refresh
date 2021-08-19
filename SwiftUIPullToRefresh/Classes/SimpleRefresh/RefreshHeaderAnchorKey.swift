@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 @available(iOS 13.0, *)
 enum RefreshHeaderAnchorKey: PreferenceKey {
     static var defaultValue: Value = []

@@ -120,4 +120,3 @@ extension Refresh.Modifier: ViewModifier {
         footerUpdate = update
     }
 }
-

@@ -9,14 +9,15 @@
 import Introspect
 import SwiftUI
 
-
 @available(iOS 13.0, *)
 struct RefreshModifier {
+    var shouldRefreshOnInit: Bool = false
     let headerAction: Action
 
     @StateObject var viewModel: RefreshViewModel = .init()
 
-    init(headerAction: @escaping Action) {
+    init(autoRefreshOnInit: Bool, headerAction: @escaping Action) {
+        shouldRefreshOnInit = autoRefreshOnInit
         self.headerAction = headerAction
     }
 
@@ -25,7 +26,6 @@ struct RefreshModifier {
 
 @available(iOS 13.0, *)
 extension RefreshModifier: ViewModifier {
-    
     var state: RefreshViewState {
         viewModel.viewState
     }
@@ -55,6 +55,9 @@ extension RefreshModifier: ViewModifier {
         }.introspectScrollView { scrollView in
             self.viewModel.scrollView = scrollView
             dispatch(.updateRefreshHeaderAction(headerAction))
+            if self.shouldRefreshOnInit {
+                dispatch(.callRefreshOnInit(headerAction))
+            }
         }
     }
 
@@ -71,60 +74,7 @@ extension RefreshModifier: ViewModifier {
 
 @available(iOS 13.0, *)
 public extension ScrollView {
-    func headerRefreshable(_ headerAction: @escaping Action) -> some View {
-        modifier(RefreshModifier(headerAction: headerAction))
-    }
-}
-
-func reduce(_ action: @escaping Action, state: inout RefreshState) {
-    state.onReload = action
-}
-
-func reduce(headerBounds: CGRect, state: inout RefreshState) {
-    state.headerBounds = headerBounds
-}
-
-func reduce(_ newScrollViewState: ScrollViewState, state: inout RefreshState) {
-    // print("newScroll", newScrollViewState)
-    // let oldScrollViewState = state.scrollViewState
-    state.scrollViewState = newScrollViewState
-
-    let newProgress = state.headerProgress
-    switch state.status {
-    case .idle:
-        if newScrollViewState.isTracking, newProgress >= 1.0 {
-            state.status = .pulling
-        }
-    case .pulling:
-        if newScrollViewState.isTracking, newProgress < 1.0 {
-            state.status = .idle
-        }
-
-        if !newScrollViewState.isTracking {
-            state.status = .willRefresh
-        }
-
-    case .willRefresh:
-        if newScrollViewState.isTracking {
-            // user touch will stop the refresh
-            if newProgress >= 1.0 {
-                state.status = .pulling
-            } else {
-                state.status = .idle
-            }
-        } else {
-            if state.canRefresh {
-                print("begin refresh")
-                state.beginRefresh()
-            }
-        }
-    case .endingRefresh:
-        break // just waiting
-
-    case .noMoreData:
-        break // only footer needs it
-
-    case .refresh:
-        break // just waiting
+    func headerRefreshable(autoRefreshOnInit: Bool = false, _ headerAction: @escaping Action) -> some View {
+        modifier(RefreshModifier(autoRefreshOnInit: autoRefreshOnInit, headerAction: headerAction))
     }
 }

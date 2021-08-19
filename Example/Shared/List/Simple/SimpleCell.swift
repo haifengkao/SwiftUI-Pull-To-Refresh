@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SimpleCell: View {
-    let item: SimpleList.Item
+    let item: WXXSWRefreshDemoView.Item
 
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
@@ -33,7 +33,7 @@ struct SimpleCell: View {
 struct SimpleCell_Previews: PreviewProvider {
     static var previews: some View {
         ScrollView {
-            ForEach(SimpleList.generateItems(count: 4)) { item in
+            ForEach(WXXSWRefreshDemoView.generateItems(count: 4)) { item in
                 SimpleCell(item: item)
             }
         }

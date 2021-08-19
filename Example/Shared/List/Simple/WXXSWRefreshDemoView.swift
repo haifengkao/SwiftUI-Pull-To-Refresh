@@ -5,10 +5,10 @@
 //  Created by Gesen on 2020/3/22.
 //
 
-import SwiftUIPullToRefresh
 import SwiftUI
+import SwiftUIPullToRefresh
 
-struct SimpleList: View {
+struct WXXSWRefreshDemoView: View {
     struct Item: Identifiable {
         let id = UUID()
         let color: Color
@@ -63,11 +63,14 @@ struct SimpleList: View {
             }
         })
         .onAppear { self.reload() }
+        .navigationBarBackground {
+            Color.red.shadow(radius: 1) // don't forget the shadow under the opaque navigation bar
+        }
     }
 
     func reload() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.items = SimpleList.generateItems(count: 20)
+            self.items = WXXSWRefreshDemoView.generateItems(count: 20)
             self.headerRefreshing = false
             self.noMore = false
         }
@@ -75,14 +78,14 @@ struct SimpleList: View {
 
     func loadMore() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.items += SimpleList.generateItems(count: 10)
+            self.items += WXXSWRefreshDemoView.generateItems(count: 10)
             self.footerRefreshing = false
             self.noMore = self.items.count > 50
         }
     }
 }
 
-extension SimpleList {
+extension WXXSWRefreshDemoView {
     static func generateItems(count: Int) -> [Item] {
         (0 ..< count).map { _ in
             Item(
@@ -94,5 +97,11 @@ extension SimpleList {
                 contentHeight: CGFloat.random(in: 100 ..< 200)
             )
         }
+    }
+}
+
+struct SimpleRefreshingView: View {
+    var body: some View {
+        ActivityIndicator(style: .medium)
     }
 }

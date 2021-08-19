@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 // sourcery: Prism
 enum RefreshAction {
     case updateScrollViewState(ScrollViewState)
@@ -16,4 +15,6 @@ enum RefreshAction {
     case updateRefreshHeaderAction(Action)
     case endRefresh
     case endAnimating
+
+    case callRefreshOnInit(Action)
 }
