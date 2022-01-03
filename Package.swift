@@ -18,6 +18,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
+        .package(url: "https://github.com/siteline/SwiftUI-Introspect.git", from: "0.1.3"),
         .package(url: "https://github.com/Quick/Quick.git", from: "4.0.0"),
         .package(url: "https://github.com/Quick/Nimble.git", from: "9.0.0"),
     ],
@@ -26,7 +27,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "SwiftUIPullToRefresh",
-            dependencies: [],
+            dependencies: ["Introspect"],
             path: "SwiftUIPullToRefresh/Classes"
         ),
         .target(
