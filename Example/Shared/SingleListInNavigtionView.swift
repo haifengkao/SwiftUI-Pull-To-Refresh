@@ -24,9 +24,13 @@ struct SingleListInNavigtionView: View {
                     Text("SwiftUIPullToRefresh refresh on start")
                 })
                 Divider()
-                NavigationLink(destination: ios15RefreshDemoView(), label: {
-                    Text("iOS 15 native pull to refresh")
-                })
+                if #available(iOS 15, *) {
+                    NavigationLink(destination: ios15RefreshDemoView(), label: {
+                        Text("iOS 15 native pull to refresh")
+                    })
+                } else {
+                    // Fallback on earlier versions
+                }
             }
             .navigationBarBackground {
                 Color.pink.shadow(radius: 1) // don't forget the shadow under the opaque navigation bar

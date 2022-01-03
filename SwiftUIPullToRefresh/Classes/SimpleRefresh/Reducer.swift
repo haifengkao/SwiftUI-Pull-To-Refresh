@@ -5,6 +5,7 @@
 //  Created by Hai Feng Kao on 2021/8/19.
 //
 
+import CoreGraphics
 import Foundation
 
 func reduce(_ action: @escaping Action, state: inout RefreshState) {

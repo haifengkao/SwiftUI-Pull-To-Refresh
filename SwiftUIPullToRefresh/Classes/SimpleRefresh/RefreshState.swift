@@ -5,8 +5,8 @@
 //  Created by Hai Feng Kao on 2021/7/26.
 //
 
+import CoreGraphics
 import Foundation
-
 struct RefreshState: CustomStringConvertible {
     var description: String {
         "RefreshState(status: \(status), scrollViewState: \(scrollViewState), headerBounds: \(headerBounds), minListRowHeight: \(minListRowHeight)), progress: \(headerProgress), padding: \(headerPadding)"

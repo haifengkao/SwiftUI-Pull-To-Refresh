@@ -5,8 +5,8 @@
 //  Created by Hai Feng Kao on 2021/7/26.
 //
 
+import CoreGraphics
 import Foundation
-
 // sourcery: Prism
 enum RefreshAction {
     case updateScrollViewState(ScrollViewState)
