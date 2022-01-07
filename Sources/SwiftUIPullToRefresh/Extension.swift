@@ -11,19 +11,19 @@ final class BundleToken {
     static let bundle: Bundle = {
         #if SWIFT_PACKAGE
             let bundle = Bundle.module
+            return bundle
         #else
             let bundle = Bundle(for: BundleToken.self)
+            guard let resourceBundleURL = bundle.url(
+                forResource: "SwiftUIPullToRefresh", withExtension: "bundle"
+            )
+            else { fatalError("SwiftUIPullToRefresh.bundle not found!") }
+
+            guard let resourceBundle = Bundle(url: resourceBundleURL)
+            else { fatalError("Cannot access SwiftUIPullToRefresh.bundle!") }
+            return resourceBundle
         #endif
 
-        guard let resourceBundleURL = bundle.url(
-            forResource: "SwiftUIPullToRefresh", withExtension: "bundle"
-        )
-        else { fatalError("SwiftUIPullToRefresh.bundle not found!") }
-
-        guard let resourceBundle = Bundle(url: resourceBundleURL)
-        else { fatalError("Cannot access SwiftUIPullToRefresh.bundle!") }
-
-        return resourceBundle
     }()
 }
 
