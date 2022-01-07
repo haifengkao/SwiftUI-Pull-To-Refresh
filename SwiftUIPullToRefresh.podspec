@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftUIPullToRefresh'
-  s.version          = '0.9.0'
+  s.version          = '0.10.0'
   s.summary          = 'Customizable SwiftUI pull down/up to refresh'
 
 # This description is used to generate tags and improve search results.
