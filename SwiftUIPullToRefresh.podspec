@@ -35,10 +35,10 @@ Pod::Spec.new do |s|
 
   s.swift_version = '5'
 
-  s.source_files = 'SwiftUIPullToRefresh/Classes/**/*'
+  s.source_files = 'Sources/SwiftUIPullToRefresh/**/*.swift'
 
   s.resource_bundles = {
-    'SwiftUIPullToRefresh' => ['SwiftUIPullToRefresh/Assets/*.*']
+    'SwiftUIPullToRefresh' => ['Sources/SwiftUIPullToRefresh/Assets/*']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

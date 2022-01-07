@@ -14,13 +14,11 @@ EXTERNAL SOURCES:
   SwiftUIPullToRefresh:
     :path: "../"
 
-CHECKOUT OPTIONS: 
-
 SPEC CHECKSUMS:
   Introspect: 2be020f30f084ada52bb4387fff83fa52c5c400e
   Nimble: 4f4a345c80b503b3ea13606a4f98405974ee4d0b
   Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
-  SwiftUIPullToRefresh: e4d1807551d9c2f49b63c7a04967c1fe306d8c8b
+  SwiftUIPullToRefresh: 4285c6f08af5f5673ec38386e4e9e10689daf59b
 
 COCOAPODS: 1.11.2
 

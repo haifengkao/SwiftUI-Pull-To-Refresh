@@ -37,14 +37,16 @@ extension Color {
     static let MJRefreshLabelTextColor: Color = .init(red: 90 / 255.0, green: 90 / 255.0, blue: 90 / 255.0)
 }
 
-struct ActivityIndicator: UIViewRepresentable {
-    let style: UIActivityIndicatorView.Style
+#if !os(macOS)
+    struct ActivityIndicator: UIViewRepresentable {
+        let style: UIActivityIndicatorView.Style
 
-    func makeUIView(context _: Context) -> UIActivityIndicatorView {
-        return UIActivityIndicatorView(style: style)
-    }
+        func makeUIView(context _: Context) -> UIActivityIndicatorView {
+            return UIActivityIndicatorView(style: style)
+        }
 
-    func updateUIView(_ uiView: UIActivityIndicatorView, context _: Context) {
-        uiView.startAnimating()
+        func updateUIView(_ uiView: UIActivityIndicatorView, context _: Context) {
+            uiView.startAnimating()
+        }
     }
-}
+#endif
