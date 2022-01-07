@@ -9,9 +9,13 @@ import SwiftUI
 
 final class BundleToken {
     static let bundle: Bundle = {
-        let myBundle = Bundle(for: BundleToken.self)
+        #if SWIFT_PACKAGE
+            let bundle = Bundle.module
+        #else
+            let bundle = Bundle(for: BundleToken.self)
+        #endif
 
-        guard let resourceBundleURL = myBundle.url(
+        guard let resourceBundleURL = bundle.url(
             forResource: "SwiftUIPullToRefresh", withExtension: "bundle"
         )
         else { fatalError("SwiftUIPullToRefresh.bundle not found!") }
