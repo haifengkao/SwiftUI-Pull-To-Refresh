@@ -31,6 +31,8 @@ import SwiftUI
                 assert(internalState.status == .refresh)
                 newState.status = .endingRefresh
             case .endAnimating:
+                // the following assert will fail becasue
+                // ".onAnimationCompleted(for: state.headerPadding)" is fired even when no animation is applied
                 assert(internalState.isAnimating, "should have animating before")
                 newState.isAnimating = false
 
@@ -52,6 +54,8 @@ import SwiftUI
                 print("old", viewState, "->", newViewState)
                 if newViewState.shouldAnimating {
                     newState.isAnimating = true
+                    
+                    print("begin animation")
                     withAnimation(.linear(duration: 0.3)) {
                         viewState = newViewState
                     }
