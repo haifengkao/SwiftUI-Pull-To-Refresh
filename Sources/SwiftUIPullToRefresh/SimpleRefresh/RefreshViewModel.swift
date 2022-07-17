@@ -47,15 +47,15 @@ import SwiftUI
                 }
             }
 
-            print("newState", newState.status, action)
+            // logger.info("newState", newState.status, action)
 
             let newViewState = newState.asViewState
             if !newState.isAnimating, newViewState != viewState {
-                print("old", viewState, "->", newViewState)
+                logger.info("old \(viewState) -> \(newViewState)")
                 if newViewState.shouldAnimating {
                     newState.isAnimating = true
-                    
-                    print("begin animation")
+
+                    logger.info("begin animation")
                     withAnimation(.linear(duration: 0.3)) {
                         viewState = newViewState
                     }
@@ -83,7 +83,7 @@ import SwiftUI
 
                         if let old = change.oldValue, offset == old { return }
 
-                        print("contentOffset", offset)
+                        logger.info("RefreshViewModel contentOffset \(offset)")
                         let size = scrollView.contentSize
                         let isTracking = scrollView.isTracking
 
@@ -96,3 +96,9 @@ import SwiftUI
     }
 
 #endif
+
+extension CGPoint: CustomStringConvertible {
+    public var description: String {
+        "(\(x),\(y))"
+    }
+}

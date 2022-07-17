@@ -14,3 +14,9 @@ public struct RefreshViewState: Equatable {
     public var progress: CGFloat = 0.0
     static let empty: Self = .init()
 }
+
+extension RefreshViewState: CustomStringConvertible {
+    public var description: String {
+        "RefreshViewState(headerPadding: \(headerPadding), shouldAnimating: \(shouldAnimating), refreshing: \(refreshing), progress: \(progress))"
+    }
+}

@@ -8,6 +8,7 @@
 import CoreGraphics
 import Foundation
 
+import os
 func reduce(_ action: @escaping Action, state: inout RefreshState) {
     state.onReload = action
 }
@@ -46,7 +47,7 @@ func reduce(scrollViewState newScrollViewState: ScrollViewState, state: inout Re
             }
         } else {
             if state.canRefresh {
-                print("begin refresh")
+                logger.info("begin refresh")
                 state.beginRefresh()
             }
         }

@@ -31,6 +31,7 @@ struct AnimationCompletionObserverModifier<Value>: AnimatableModifier where Valu
 
     /// Verifies whether the current animation is finished and calls the completion callback if true.
     private func notifyCompletionIfFinished() {
+        logger.info("equal \(animatableData == targetValue) animatableData \(animatableData) targetValue \(targetValue)")
         guard animatableData == targetValue else { return }
 
         /// Dispatching is needed to take the next runloop for the completion callback.

@@ -44,7 +44,7 @@ import SwiftUI
                     // .clipped(true) // https://github.com/siteline/SwiftUI-Introspect/issues/115
                     .onAnimationCompleted(for: state.headerPadding) {
                         dispatch(.endAnimating)
-                        print("Intro text animated in!")
+                        logger.info("Intro text animated in!")
                     }
 
                     // .clipped(proxy.safeAreaInsets == .zero)
