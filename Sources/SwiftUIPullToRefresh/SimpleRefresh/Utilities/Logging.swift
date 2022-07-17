@@ -9,10 +9,10 @@ import Foundation
 import os
 
 var logger: Logger {
-    SwiftUIPullToRefresh.logger
+    Logging.logger
 }
 
-public enum SwiftUIPullToRefresh {
+public enum Logging {
     public static let subsystem = "com.logging.SwiftUIPullToRefresh"
     public static let category = "UI"
 
@@ -24,6 +24,6 @@ public enum SwiftUIPullToRefresh {
         #endif
     }()
 
-    /// to disable debug mode logging, set SwiftUIPullToRefresh.loggger = .init(OSLog.disabled)
+    /// to disable debug mode logging, set Logging.loggger = .init(OSLog.disabled)
     public static var logger: Logger = .init(osLog)
 }
