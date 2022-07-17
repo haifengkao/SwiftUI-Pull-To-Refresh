@@ -1,16 +1,14 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "SwiftUINavigationBarColor",
-        "repositoryURL": "https://github.com/haifengkao/SwiftUI-Navigation-Bar-Color",
-        "state": {
-          "branch": null,
-          "revision": "498fb60eb569cabe9cd7c8b92304e5888adaf7f9",
-          "version": "0.10.0"
-        }
+  "pins" : [
+    {
+      "identity" : "swiftui-navigation-bar-color",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/haifengkao/SwiftUI-Navigation-Bar-Color",
+      "state" : {
+        "revision" : "498fb60eb569cabe9cd7c8b92304e5888adaf7f9",
+        "version" : "0.10.0"
       }
-    ]
-  },
-  "version": 1
+    }
+  ],
+  "version" : 2
 }
