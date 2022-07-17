@@ -12,10 +12,11 @@ var logger: Logger {
     SwiftUIPullToRefresh.logger
 }
 
-enum SwiftUIPullToRefresh {
-    static let subsystem = "com.logging.SwiftUIPullToRefresh"
-    static let category = "UI"
-    static let osLog: OSLog = {
+public enum SwiftUIPullToRefresh {
+    public static let subsystem = "com.logging.SwiftUIPullToRefresh"
+    public static let category = "UI"
+
+    private static let osLog: OSLog = {
         #if DEBUG
             OSLog(subsystem: subsystem, category: category)
         #else
@@ -24,5 +25,5 @@ enum SwiftUIPullToRefresh {
     }()
 
     /// to disable debug mode logging, set SwiftUIPullToRefresh.loggger = .init(OSLog.disabled)
-    static var logger: Logger = .init(osLog)
+    public static var logger: Logger = .init(osLog)
 }

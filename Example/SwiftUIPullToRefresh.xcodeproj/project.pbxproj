@@ -29,8 +29,6 @@
 		F95D613D2657D22F00E7D582 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95D61122657D22D00E7D582 /* ContentView.swift */; };
 		F95D613E2657D22F00E7D582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95D61132657D22F00E7D582 /* Assets.xcassets */; };
 		F95D613F2657D22F00E7D582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95D61132657D22F00E7D582 /* Assets.xcassets */; };
-		F990CF402883248C007AE3EB /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F990CF3F2883248C007AE3EB /* Logging.swift */; };
-		F990CF412883248C007AE3EB /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F990CF3F2883248C007AE3EB /* Logging.swift */; };
 		F990CF4628832593007AE3EB /* SwiftUINavigationBarColor in Frameworks */ = {isa = PBXBuildFile; productRef = F990CF4528832593007AE3EB /* SwiftUINavigationBarColor */; };
 		F9A6625126CD4791006D0F32 /* AutoRefreshDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A6625026CD4791006D0F32 /* AutoRefreshDemoView.swift */; };
 		F9A6625226CD4791006D0F32 /* AutoRefreshDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A6625026CD4791006D0F32 /* AutoRefreshDemoView.swift */; };
@@ -83,7 +81,6 @@
 		F95D61332657D22F00E7D582 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F95D61372657D22F00E7D582 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		F95D61392657D22F00E7D582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F990CF3F2883248C007AE3EB /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Logging.swift; path = ../../../Sources/SwiftUIPullToRefresh/SimpleRefresh/Utilities/Logging.swift; sourceTree = "<group>"; };
 		F9A6625026CD4791006D0F32 /* AutoRefreshDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoRefreshDemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,7 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				F9386F7726ADEF9B00C4864A /* ActivityIndicator.swift */,
-				F990CF3F2883248C007AE3EB /* Logging.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -505,7 +501,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9386F8326ADEF9B00C4864A /* ActivityIndicator.swift in Sources */,
-				F990CF402883248C007AE3EB /* Logging.swift in Sources */,
 				F95D613C2657D22F00E7D582 /* ContentView.swift in Sources */,
 				F95D613A2657D22F00E7D582 /* SwiftUIPullToRefreshApp.swift in Sources */,
 				F9386F8926ADEF9B00C4864A /* ManualRefreshDemoView.swift in Sources */,
@@ -522,7 +517,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9386F8426ADEF9B00C4864A /* ActivityIndicator.swift in Sources */,
-				F990CF412883248C007AE3EB /* Logging.swift in Sources */,
 				F95D613D2657D22F00E7D582 /* ContentView.swift in Sources */,
 				F95D613B2657D22F00E7D582 /* SwiftUIPullToRefreshApp.swift in Sources */,
 				F9386F8A26ADEF9B00C4864A /* ManualRefreshDemoView.swift in Sources */,
