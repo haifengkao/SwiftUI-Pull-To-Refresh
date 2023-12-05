@@ -1,5 +1,0 @@
-${PODS_ROOT}/Target Support Files/Pods-Tests iOS/Pods-Tests iOS-frameworks.sh
-${BUILT_PRODUCTS_DIR}/Introspect/Introspect.framework
-${BUILT_PRODUCTS_DIR}/SwiftUIPullToRefresh/SwiftUIPullToRefresh.framework
-${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework
-${BUILT_PRODUCTS_DIR}/Quick/Quick.framework
