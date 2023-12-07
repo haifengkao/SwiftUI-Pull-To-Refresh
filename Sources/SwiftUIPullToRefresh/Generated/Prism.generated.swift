@@ -10,7 +10,7 @@ import Foundation
     import AppKit
 #endif
 
-extension RefreshAction {
+extension PullToRefreshAction {
     var updateScrollViewState: ScrollViewState? {
         get {
             guard case let .updateScrollViewState(associatedValue0) = self else { return nil }

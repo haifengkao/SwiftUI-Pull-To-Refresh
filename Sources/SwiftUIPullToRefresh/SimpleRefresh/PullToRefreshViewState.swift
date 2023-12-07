@@ -7,7 +7,7 @@
 
 import CoreGraphics
 import Foundation
-public struct RefreshViewState: Equatable {
+public struct PullToRefreshViewState: Equatable {
     var headerPadding: CGFloat = 0.0
     var shouldAnimating: Bool = false // the header view moving down doesn't need animation, otherwsie the layout would be incorrect, but moving up needs animation
     public var refreshing: Bool = false
@@ -15,7 +15,7 @@ public struct RefreshViewState: Equatable {
     static let empty: Self = .init()
 }
 
-extension RefreshViewState: CustomStringConvertible {
+extension PullToRefreshViewState: CustomStringConvertible {
     public var description: String {
         "RefreshViewState(headerPadding: \(headerPadding), shouldAnimating: \(shouldAnimating), refreshing: \(refreshing), progress: \(progress))"
     }

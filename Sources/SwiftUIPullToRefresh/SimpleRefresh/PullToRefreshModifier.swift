@@ -11,11 +11,11 @@ import SwiftUI
 
 #if os(iOS)
     @available(iOS 13.0, *)
-    struct RefreshModifier {
+    struct PullToRefreshModifier {
         var shouldRefreshOnInit: Bool = false
         let headerAction: Action
 
-        @StateObject var viewModel: RefreshViewModel = .init()
+        @StateObject var viewModel: PullToRefreshViewModel = .init()
 
         init(autoRefreshOnInit: Bool, headerAction: @escaping Action) {
             shouldRefreshOnInit = autoRefreshOnInit
@@ -26,12 +26,12 @@ import SwiftUI
     }
 
     @available(iOS 13.0, *)
-    extension RefreshModifier: ViewModifier {
-        var state: RefreshViewState {
+    extension PullToRefreshModifier: ViewModifier {
+        var state: PullToRefreshViewState {
             viewModel.viewState
         }
 
-        func dispatch(_ action: RefreshAction) {
+        func dispatch(_ action: PullToRefreshAction) {
             viewModel.dispatch(action)
         }
 
@@ -48,7 +48,7 @@ import SwiftUI
                     }
 
                     // .clipped(proxy.safeAreaInsets == .zero)
-                    .backgroundPreferenceValue(RefreshHeaderAnchorKey.self) { v -> Color in
+                    .backgroundPreferenceValue(PullToRefreshHeaderAnchorKey.self) { v -> Color in
                         DispatchQueue.main.async { self.update(proxy: proxy, value: v) }
                         return Color.clear
                     }
@@ -63,7 +63,7 @@ import SwiftUI
             }
         }
 
-        func update(proxy: GeometryProxy, value: RefreshHeaderAnchorKey.Value) {
+        func update(proxy: GeometryProxy, value: PullToRefreshHeaderAnchorKey.Value) {
             guard let value = value.last else {
                 return
             }
@@ -77,7 +77,7 @@ import SwiftUI
     @available(iOS 13.0, *)
     public extension ScrollView {
         func headerRefreshable(autoRefreshOnInit: Bool = false, _ headerAction: @escaping Action) -> some View {
-            modifier(RefreshModifier(autoRefreshOnInit: autoRefreshOnInit, headerAction: headerAction))
+            modifier(PullToRefreshModifier(autoRefreshOnInit: autoRefreshOnInit, headerAction: headerAction))
         }
     }
 

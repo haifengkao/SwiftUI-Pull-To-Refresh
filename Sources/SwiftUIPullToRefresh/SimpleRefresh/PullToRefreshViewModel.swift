@@ -9,14 +9,14 @@ import SwiftUI
 
 #if os(iOS)
     import UIKit
-    class RefreshViewModel: ObservableObject {
+    class PullToRefreshViewModel: ObservableObject {
         init() {
             internalState.endRefresh = { [weak self] in
                 self?.dispatch(.endRefresh)
             }
         }
 
-        func dispatch(_ action: RefreshAction) {
+        func dispatch(_ action: PullToRefreshAction) {
             var newState = internalState
             switch action {
             case let .updateMinListRowHeight(height):
@@ -66,8 +66,8 @@ import SwiftUI
             internalState = newState
         }
 
-        var internalState: RefreshState = .empty
-        @Published var viewState: RefreshViewState = .empty
+        var internalState: PullToRefreshState = .empty
+        @Published var viewState: PullToRefreshViewState = .empty
         var ob: NSKeyValueObservation?
 
         private weak var _scrollView: UIScrollView?

@@ -10,17 +10,17 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 extension EnvironmentValues {
-    var headerUpdate: RefreshHeaderUpdateKey.Value {
-        get { self[RefreshHeaderUpdateKey.self] }
-        set { self[RefreshHeaderUpdateKey.self] = newValue }
+    var headerUpdate: PullToRefreshHeaderUpdateKey.Value {
+        get { self[PullToRefreshHeaderUpdateKey.self] }
+        set { self[PullToRefreshHeaderUpdateKey.self] = newValue }
     }
 }
 
-enum RefreshHeaderUpdateKey {
+enum PullToRefreshHeaderUpdateKey {
     static var defaultValue: Value = .empty
 }
 
 @available(iOS 13.0, *)
-extension RefreshHeaderUpdateKey: EnvironmentKey {
-    typealias Value = RefreshViewState
+extension PullToRefreshHeaderUpdateKey: EnvironmentKey {
+    typealias Value = PullToRefreshViewState
 }

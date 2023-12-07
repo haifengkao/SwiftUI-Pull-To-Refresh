@@ -7,7 +7,7 @@
 
 import CoreGraphics
 import Foundation
-struct RefreshState: CustomStringConvertible {
+struct PullToRefreshState: CustomStringConvertible {
     var description: String {
         "RefreshState(status: \(status), scrollViewState: \(scrollViewState), headerBounds: \(headerBounds), minListRowHeight: \(minListRowHeight)), progress: \(headerProgress), padding: \(headerPadding)"
     }
@@ -25,7 +25,7 @@ struct RefreshState: CustomStringConvertible {
     }
 
     var minListRowHeight: CGFloat = 0.0 // to support List
-    static let empty: RefreshState = .init()
+    static let empty: PullToRefreshState = .init()
 
     var canRefresh: Bool {
         status == .willRefresh && headerProgress < 1.0 // to avoid headerView position changes drastically, delay the refresh until scrollView bounces to contentOffset ~ 0.0
@@ -40,8 +40,8 @@ struct RefreshState: CustomStringConvertible {
     }
 }
 
-extension RefreshState {
-    var asViewState: RefreshViewState {
+extension PullToRefreshState {
+    var asViewState: PullToRefreshViewState {
         .init(headerPadding: headerPadding, shouldAnimating: status == .endingRefresh, refreshing: status == .refresh, progress: headerProgress)
     }
 }

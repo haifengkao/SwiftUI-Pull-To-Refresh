@@ -1,19 +1,14 @@
 //
-//  SimpleList.swift
-//  Demo
+//  File.swift
+//  
 //
-//  Created by Gesen on 2020/3/22.
+//  Created by Hai Feng Kao on 2023/12/8.
 //
 
-import Refresh
-import SwiftUI
-struct Item: Identifiable {
-    let id = UUID()
-    let color: Color
-    let contentHeight: CGFloat
-}
-struct SimpleList: View {
-   
+
+import SwiftUIPullToRefresh
+struct PullToRefreshList: View {
+    
 
     @State private var items: [Item] = []
     @State private var headerRefreshing: Bool = false
@@ -23,7 +18,8 @@ struct SimpleList: View {
     var body: some View {
         ScrollView {
             if items.count > 0 {
-                RefreshHeader(refreshing: $headerRefreshing, action: {
+                
+                PullToRefreshHeader(refreshing: $headerRefreshing, action: {
                     self.reload()
                 }) { progress in
                     if self.headerRefreshing {

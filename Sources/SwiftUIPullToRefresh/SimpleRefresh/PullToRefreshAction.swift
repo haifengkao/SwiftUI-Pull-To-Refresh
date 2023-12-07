@@ -8,7 +8,7 @@
 import CoreGraphics
 import Foundation
 // sourcery: Prism
-enum RefreshAction {
+enum PullToRefreshAction {
     case updateScrollViewState(ScrollViewState)
     case updateMinListRowHeight(CGFloat)
     case updateRefreshHeader(CGRect)

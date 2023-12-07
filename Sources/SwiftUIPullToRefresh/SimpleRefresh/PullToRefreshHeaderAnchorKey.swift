@@ -8,7 +8,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-enum RefreshHeaderAnchorKey: PreferenceKey {
+enum PullToRefreshHeaderAnchorKey: PreferenceKey {
     static var defaultValue: Value = []
 
     typealias Value = [Item]

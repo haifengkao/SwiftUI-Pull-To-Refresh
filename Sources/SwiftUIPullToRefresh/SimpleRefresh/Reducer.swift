@@ -9,15 +9,15 @@ import CoreGraphics
 import Foundation
 
 import os
-func reduce(_ action: @escaping Action, state: inout RefreshState) {
+func reduce(_ action: @escaping Action, state: inout PullToRefreshState) {
     state.onReload = action
 }
 
-func reduce(headerBounds: CGRect, state: inout RefreshState) {
+func reduce(headerBounds: CGRect, state: inout PullToRefreshState) {
     state.headerBounds = headerBounds
 }
 
-func reduce(scrollViewState newScrollViewState: ScrollViewState, state: inout RefreshState) {
+func reduce(scrollViewState newScrollViewState: ScrollViewState, state: inout PullToRefreshState) {
     // print("newScroll", newScrollViewState)
     // let oldScrollViewState = state.scrollViewState
     state.scrollViewState = newScrollViewState

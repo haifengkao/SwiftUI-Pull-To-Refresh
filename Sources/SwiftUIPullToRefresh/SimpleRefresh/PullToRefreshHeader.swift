@@ -12,12 +12,12 @@ public typealias EndRefresh = () -> Void
 public typealias Action = (@escaping EndRefresh) -> Void
 
 @available(iOS 13.0, *)
-public struct RefreshHeader<Label>: View where Label: View {
+public struct PullToRefreshHeader<Label>: View where Label: View {
     @Environment(\.headerUpdate) var update
 
-    let label: (RefreshViewState) -> Label
+    let label: (PullToRefreshViewState) -> Label
 
-    public init(@ViewBuilder label: @escaping (RefreshViewState) -> Label) {
+    public init(@ViewBuilder label: @escaping (PullToRefreshViewState) -> Label) {
         self.label = label
     }
 
@@ -31,7 +31,7 @@ public struct RefreshHeader<Label>: View where Label: View {
             .frame(maxWidth: .infinity)
         }
         .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
-        .anchorPreference(key: RefreshHeaderAnchorKey.self, value: .bounds) {
+        .anchorPreference(key: PullToRefreshHeaderAnchorKey.self, value: .bounds) {
             [.init(bounds: $0)]
         }
     }

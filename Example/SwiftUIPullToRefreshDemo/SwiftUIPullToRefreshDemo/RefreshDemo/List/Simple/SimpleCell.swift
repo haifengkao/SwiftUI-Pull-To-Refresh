@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SimpleCell: View {
-    let item: SimpleList.Item
+    let item: Item
 
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
