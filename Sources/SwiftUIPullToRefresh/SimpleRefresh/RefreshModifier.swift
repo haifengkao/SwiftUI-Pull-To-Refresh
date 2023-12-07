@@ -6,8 +6,8 @@
 //  Copyright (c) 2021 Hai Feng Kao. All rights reserved.
 //
 
-import Introspect
 import SwiftUI
+@_spi(Advanced) import SwiftUIIntrospect
 
 #if os(iOS)
     @available(iOS 13.0, *)
@@ -53,7 +53,8 @@ import SwiftUI
                         return Color.clear
                     }
 
-            }.introspectScrollView { scrollView in
+            }.introspect(.scrollView, on: .iOS(.v13...), scope: .ancestor) { scrollView in
+
                 self.viewModel.scrollView = scrollView
                 dispatch(.updateRefreshHeaderAction(headerAction))
                 if self.shouldRefreshOnInit {

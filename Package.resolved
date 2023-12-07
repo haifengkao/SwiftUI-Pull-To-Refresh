@@ -1,15 +1,6 @@
 {
   "pins" : [
     {
-      "identity" : "refresh",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/wxxsw/Refresh.git",
-      "state" : {
-        "revision" : "4b507f7c6f08f80d853b7ff052f4324a1279cdfe",
-        "version" : "0.2.0"
-      }
-    },
-    {
       "identity" : "swiftui-introspect",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/siteline/swiftui-introspect",

@@ -5,8 +5,8 @@
 //  Created by Gesen on 2020/3/8.
 //  https://github.com/wxxsw/Refresh
 
-import Introspect
 import SwiftUI
+@_spi(Advanced) import SwiftUIIntrospect
 @available(iOS 13.0, *)
 extension Refresh {
     struct Modifier {
@@ -50,7 +50,8 @@ extension Refresh {
                         return Color.clear
                     }
                     .id(self.id)
-            }.introspectScrollView { scrollView in
+            }
+            .introspect(.scrollView, on: .iOS(.v13...), scope: .ancestor) { scrollView in
                 self.headerUpdate.update(tracking: scrollView.isTracking)
             }
         }
