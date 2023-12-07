@@ -1,5 +1,5 @@
-import XCTest
 @testable import SwiftUIPullToRefresh
+import XCTest
 
 final class SwiftUIPullToRefreshTests: XCTestCase {
     func testExample() throws {

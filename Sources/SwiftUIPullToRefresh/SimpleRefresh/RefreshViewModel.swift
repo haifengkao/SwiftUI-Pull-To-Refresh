@@ -51,7 +51,7 @@ import SwiftUI
 
             let newViewState = newState.asViewState
             if !newState.isAnimating, newViewState != viewState {
-                logger.info("old \(self.viewState) -> \(newViewState)")
+                logger.info("old \(viewState) -> \(newViewState)")
                 if newViewState.shouldAnimating {
                     newState.isAnimating = true
 

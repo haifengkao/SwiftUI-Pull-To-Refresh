@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ActivityIndicator: UIViewRepresentable {
     let style: UIActivityIndicatorView.Style
-    
-    func makeUIView(context: Context) -> UIActivityIndicatorView  {
+
+    func makeUIView(context _: Context) -> UIActivityIndicatorView {
         return UIActivityIndicatorView(style: style)
     }
-    
-    func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {
+
+    func updateUIView(_ uiView: UIActivityIndicatorView, context _: Context) {
         uiView.startAnimating()
     }
 }

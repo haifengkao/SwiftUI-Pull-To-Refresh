@@ -14,15 +14,15 @@ struct MenuView: View {
                 NavigationLink(destination: SingleListInNavigtionView()) {
                     Text("Single List in NavigationView")
                 }
-                
+
                 NavigationLink(destination: SingleListInNavigationAndTabView()) {
                     Text("Single List in NavigationView and TabView")
                 }
-                
+
                 NavigationLink(destination: SingleListWithoutNavigationView()) {
                     Text("Single List without NavigationView")
                 }
-                
+
                 NavigationLink(destination: MutipleListView()) {
                     Text("Mutiple List")
                 }

@@ -11,7 +11,7 @@ struct MutipleListView: View {
     var body: some View {
         VStack {
             Color.yellow.frame(height: 44)
-            
+
             HStack {
                 SimpleList()
                     .border(Color.gray, width: 2)
@@ -24,7 +24,7 @@ struct MutipleListView: View {
                 SimpleList()
                     .border(Color.gray, width: 2)
             }
-            
+
             Color.yellow.frame(height: 44)
         }
         .navigationBarTitle("Mutiple List", displayMode: .inline)

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SimplePullToRefreshView: View {
     let progress: CGFloat
-    
+
     var body: some View {
         Text("Pull to refresh")
     }

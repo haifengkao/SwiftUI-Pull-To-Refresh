@@ -11,7 +11,7 @@ struct SingleListWithoutNavigationView: View {
     var body: some View {
         ZStack(alignment: .topLeading) {
             SimpleList()
-            
+
             Button(action: {
                 self.presentationMode.wrappedValue.dismiss()
             }) {
@@ -27,7 +27,7 @@ struct SingleListWithoutNavigationView: View {
         .navigationBarTitle("", displayMode: .inline)
         .navigationBarHidden(true)
     }
-    
+
     @Environment(\.presentationMode) var presentationMode
 }
 

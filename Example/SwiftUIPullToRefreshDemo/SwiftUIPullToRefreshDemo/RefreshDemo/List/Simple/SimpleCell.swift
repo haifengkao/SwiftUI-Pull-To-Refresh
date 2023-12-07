@@ -9,18 +9,18 @@ import SwiftUI
 
 struct SimpleCell: View {
     let item: SimpleList.Item
-    
+
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
             item.color
                 .frame(width: 60, height: 60)
                 .cornerRadius(8)
-            
+
             VStack(spacing: 8) {
                 item.color
                     .frame(height: 30)
                     .cornerRadius(4)
-                
+
                 item.color
                     .frame(height: item.contentHeight)
                     .cornerRadius(4)
