@@ -53,7 +53,7 @@ import SwiftUI
                         return Color.clear
                     }
 
-            }.introspect(.scrollView, on: .iOS(.v13...), scope: .ancestor) { scrollView in
+            }.introspect(.scrollView, on: .iOS(.v13...), scope: .receiver) { scrollView in
 
                 self.viewModel.scrollView = scrollView
                 dispatch(.updateRefreshHeaderAction(headerAction))
