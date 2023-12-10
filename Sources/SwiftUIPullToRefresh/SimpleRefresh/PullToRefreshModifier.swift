@@ -40,14 +40,14 @@ import SwiftUI
 
                 content
                     .environment(\.headerUpdate, state)
-                    .padding(.top, state.headerPadding)
+                    .padding(.top, state.currentHeaderPadding)
                     // .clipped(true) // https://github.com/siteline/SwiftUI-Introspect/issues/115
-                    .onAnimationCompleted(for: state.headerPadding) {
-                        dispatch(.endAnimating)
-                        logger.info("Intro text animated in!")
+                    .onChange(of: state.currentHeaderPadding) { [oldPadding = state.currentHeaderPadding] newPadding in
+                        if state.canEndAnimation(oldPadding: oldPadding, newPadding: newPadding) {
+                            dispatch(.endAnimating)
+                        }
+                       
                     }
-
-                    // .clipped(proxy.safeAreaInsets == .zero)
                     .backgroundPreferenceValue(PullToRefreshHeaderAnchorKey.self) { v -> Color in
                         DispatchQueue.main.async { self.update(proxy: proxy, value: v) }
                         return Color.clear
