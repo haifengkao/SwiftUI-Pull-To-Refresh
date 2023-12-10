@@ -26,6 +26,7 @@ struct MenuView: View {
                 NavigationLink(destination: MutipleListView()) {
                     Text("Mutiple List")
                 }
+              
             }
             .navigationBarTitle("Refresh", displayMode: .inline)
         }

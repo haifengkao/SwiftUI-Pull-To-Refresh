@@ -1,15 +1,14 @@
 //
 //  File.swift
-//  
+//
 //
 //  Created by Hai Feng Kao on 2023/12/8.
 //
 
-
+import SwiftUI
 import SwiftUIPullToRefresh
 struct PullToRefreshList: View {
-    
-
+    @State private var headerLastUpdatedTime: Date? = nil
     @State private var items: [Item] = []
     @State private var headerRefreshing: Bool = false
     @State private var footerRefreshing: Bool = false
@@ -18,40 +17,22 @@ struct PullToRefreshList: View {
     var body: some View {
         ScrollView {
             if items.count > 0 {
-                
-                PullToRefreshHeader(refreshing: $headerRefreshing, action: {
-                    self.reload()
-                }) { progress in
-                    if self.headerRefreshing {
-                        SimpleRefreshingView()
-                    } else {
-                        SimplePullToRefreshView(progress: progress)
-                    }
+                PullToRefreshHeader { update in
+
+                    MJRefreshNormalHeader(refreshing: update.refreshing, lastUpdatedTime: $headerLastUpdatedTime, progress: Double(update.progress))
+                        //.opacity(Double(min(update.progress, 1.0)))
+                    // SimplePullToRefreshView(progress: progress)
                 }
             }
 
             ForEach(items) { item in
                 SimpleCell(item: item)
             }
-
-            if items.count > 0 {
-                RefreshFooter(refreshing: $footerRefreshing, action: {
-                    self.loadMore()
-                }) {
-                    if self.noMore {
-                        Text("No more data !")
-                            .foregroundColor(.secondary)
-                            .padding()
-                    } else {
-                        SimpleRefreshingView()
-                            .padding()
-                    }
-                }
-                .noMore(noMore)
-                .preload(offset: 50)
-            }
         }
-        .enableRefresh()
+        .headerRefreshable { endRefresh in
+            self.reload(endRefresh: endRefresh)
+        }
+
         .overlay(Group {
             if items.count == 0 {
                 ActivityIndicator(style: .medium)
@@ -59,14 +40,15 @@ struct PullToRefreshList: View {
                 EmptyView()
             }
         })
-        .onAppear { self.reload() }
+        .onAppear { self.items = SimpleList.generateItems(count: 5) }
     }
 
-    func reload() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.items = SimpleList.generateItems(count: 20)
-            self.headerRefreshing = false
+    func reload(endRefresh: @escaping EndRefresh = {}) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+            
+            self.items = SimpleList.generateItems(count: 5)
             self.noMore = false
+            endRefresh()
         }
     }
 
@@ -75,21 +57,6 @@ struct PullToRefreshList: View {
             self.items += SimpleList.generateItems(count: 10)
             self.footerRefreshing = false
             self.noMore = self.items.count > 50
-        }
-    }
-}
-
-extension SimpleList {
-    static func generateItems(count: Int) -> [Item] {
-        (0 ..< count).map { _ in
-            Item(
-                color: Color(
-                    red: Double.random(in: 0 ..< 255) / 255,
-                    green: Double.random(in: 0 ..< 255) / 255,
-                    blue: Double.random(in: 0 ..< 255) / 255
-                ),
-                contentHeight: CGFloat.random(in: 100 ..< 200)
-            )
         }
     }
 }

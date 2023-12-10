@@ -7,9 +7,11 @@
 
 import CoreGraphics
 import Foundation
+
+/// the real(internal) state of the pull to refresh view
 struct PullToRefreshState: CustomStringConvertible {
     var description: String {
-        "RefreshState(status: \(status), scrollViewState: \(scrollViewState), headerBounds: \(headerBounds), minListRowHeight: \(minListRowHeight)), progress: \(headerProgress), padding: \(headerPadding)"
+        "RefreshState(status: \(status), scrollViewState: \(scrollViewState), headerBounds: \(headerBounds), minListRowHeight: \(minListRowHeight)), progress: \(headerProgress)"
     }
 
     var refreshOnInitExecuted: Bool = false
@@ -20,8 +22,9 @@ struct PullToRefreshState: CustomStringConvertible {
     var onReload: Action = { _ in }
     var headerBounds: CGRect = .zero
     var headerProgress: CGFloat { max(0, headerBounds.maxY / headerBounds.height) }
-    var headerPadding: CGFloat {
-        status == .refresh ? 0.0 : -max(minListRowHeight, headerBounds.height)
+
+    var paddingToHideHeader: CGFloat {
+        return -max(minListRowHeight, headerBounds.height)
     }
 
     var minListRowHeight: CGFloat = 0.0 // to support List
@@ -41,7 +44,17 @@ struct PullToRefreshState: CustomStringConvertible {
 }
 
 extension PullToRefreshState {
+    /// returns the public interface of the internal state
     var asViewState: PullToRefreshViewState {
-        .init(headerPadding: headerPadding, shouldAnimating: status == .endingRefresh, refreshing: status == .refresh, progress: headerProgress)
+        PullToRefreshViewState(
+            shouldAnimating: status == .endingRefresh,
+            paddingToHideHeader: paddingToHideHeader,
+            refreshing: status == .refresh,
+            progress: headerProgress
+        )
+    }
+
+    var canEndAnimation: Bool {
+        status == .endingRefresh
     }
 }

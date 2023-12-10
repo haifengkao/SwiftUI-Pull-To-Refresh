@@ -12,9 +12,8 @@ struct Item: Identifiable {
     let color: Color
     let contentHeight: CGFloat
 }
-struct SimpleList: View {
-   
 
+struct SimpleList: View {
     @State private var items: [Item] = []
     @State private var headerRefreshing: Bool = false
     @State private var footerRefreshing: Bool = false

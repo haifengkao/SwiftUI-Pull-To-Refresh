@@ -17,6 +17,17 @@ import SwiftUI
         }
 
         func dispatch(_ action: PullToRefreshAction) {
+            delayedDispatch(action, delay: 0.01)
+        }
+
+        // Workaround: Publishing changes from within view updates is not allowed, this will cause undefined behavior.
+        private func delayedDispatch(_ action: PullToRefreshAction, delay: TimeInterval) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+                self.realDispatch(action)
+            }
+        }
+
+        private func realDispatch(_ action: PullToRefreshAction) {
             var newState = internalState
             switch action {
             case let .updateMinListRowHeight(height):
