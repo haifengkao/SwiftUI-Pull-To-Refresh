@@ -25,5 +25,5 @@ public enum Logging {
     }()
 
     /// to disable debug mode logging, set Logging.loggger = .init(OSLog.disabled)
-    public static var logger: Logger = .init(osLog)
+    nonisolated(unsafe) public static var logger: Logger = .init(osLog)
 }
